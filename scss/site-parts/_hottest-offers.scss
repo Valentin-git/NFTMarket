@@ -1,0 +1,126 @@
+.hottest-offers-nft {
+  margin: 150px 0;
+}
+.hottest-offers {
+  display: flex;
+  &__col {
+    margin-right: 24px;
+    width: 448px;
+    overflow: hidden;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.hottest-sale-offers {
+  padding: 40px;
+  max-height: 841px;
+  border: 1px solid #E2E2ED;
+  border-radius: 20px;
+  &__title {
+    width: 99%;
+    margin-bottom: 53px;
+    font-size: 32px;
+  }
+}
+.hottest-sale-offers-carous {
+  display: flex;
+  .slick-track {
+    display: flex;
+  }
+  &__item {
+    // max-width: 212px;
+    min-width: 205px;
+    margin-bottom: 64px;
+    margin-right: 24px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &_opacity {
+      opacity: .1;
+    }
+  }
+  &__picture {
+    position: relative;
+    &_blur-min-1 {
+      &::after {
+        content: '';
+        background: url(../img/hottest-offers/hottest-sale-offers-blur.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        filter:blur(25px);
+      }
+    }
+    &_blur-min-2 {
+      &::after {
+        content: '';
+        background: url(../img/hottest-offers/hottest-sale-offers-blur2.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        filter:blur(25px);
+      }
+    }
+    img {
+      min-height: 355px;
+      position: relative;
+      z-index: 1;
+      border-radius: 20px;
+    }
+  }
+  &__title {
+    margin: 22px 0;
+  }
+ .slick-list {
+  // padding-right: 24px !important;
+  // padding-left: 0 !important;
+ }
+}
+.top-nft {
+  &__item {
+    display: flex;
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__picture {
+    margin-right: 16px;
+    img {
+      max-width: 120px;
+      border-radius: 20px;
+    }
+  }
+  &__content {
+
+  }
+}
+.get-started-creating {
+  background: url(../img/hottest-offers/get-started-box.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  align-items: end;
+  border-radius: 20px;
+  &__title {
+    width: 75%;
+    color: $whiteColor;
+    font-size: 24px;
+    font-weight: 800;
+  }
+  &__text {
+    width: 75%;
+    margin-top: 9px;
+    margin-bottom: 47px;
+    color: $textColor;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+  }
+}

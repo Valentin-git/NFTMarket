@@ -1,0 +1,23 @@
+.detail-count {
+  padding: 100px 0;
+}
+.detail-numb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 103px;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__icon {
+    display: inherit;
+    font-size: 32px;
+  }
+  &__numb {
+    color: $titleColor;
+    font-size: 48px;
+    font-weight: 800;
+  }
+}

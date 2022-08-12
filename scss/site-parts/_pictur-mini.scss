@@ -1,0 +1,274 @@
+.pictur-mini {
+  margin-bottom: 100px;
+}
+.pictur-mini-carous {
+  // display: flex;
+  // gap: 24px;
+  &__item {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 24px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__picture {
+    position: relative;
+    margin-bottom: 5px;
+    &_blur-pic-0 {
+      &::after {
+        content: '';
+        background: url(../img/pictur-mini-carous/pictur-mini-0.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 16px;
+        left: 0;
+        opacity: .2;
+        filter:blur(7px);
+      }
+    }
+    &_blur-pic-1 {
+      &::after {
+        content: '';
+        background: url(../img/pictur-mini-carous/pictur-mini-1.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 16px;
+        left: 0;
+        opacity: .2;
+        filter:blur(7px);
+      }
+    }
+    &_blur-pic-2 {
+      &::after {
+        content: '';
+        background: url(../img/pictur-mini-carous/pictur-mini-2.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 16px;
+        left: 0;
+        opacity: .2;
+        filter:blur(7px);
+      }
+    }
+    &_blur-pic-3 {
+      &::after {
+        content: '';
+        background: url(../img/pictur-mini-carous/pictur-mini-3.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 16px;
+        left: 0;
+        opacity: .2;
+        filter:blur(7px);
+      }
+    }
+    &_blur-pic-4 {
+      &::after {
+        content: '';
+        background: url(../img/pictur-mini-carous/pictur-mini-4.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 16px;
+        left: 0;
+        opacity: .2;
+        filter:blur(7px);
+      }
+    }
+    &_blur-pic-5 {
+      &::after {
+        content: '';
+        background: url(../img/pictur-mini-carous/pictur-mini-5.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 16px;
+        left: 0;
+        opacity: .2;
+        filter:blur(7px);
+      }
+    }
+    &_blur-pic-6 {
+      &::after {
+        content: '';
+        background: url(../img/pictur-mini-carous/pictur-mini-6.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 16px;
+        left: 0;
+        opacity: .2;
+        filter:blur(7px);
+      }
+    }
+    &_blur-pic-7 {
+      &::after {
+        content: '';
+        background: url(../img/pictur-mini-carous/pictur-mini-7.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 16px;
+        left: 0;
+        opacity: .2;
+        filter:blur(7px);
+      }
+    }
+    &_blur-pic-8 {
+      &::after {
+        content: '';
+        background: url(../img/pictur-mini-carous/pictur-mini-8.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 16px;
+        left: 0;
+        opacity: .2;
+        filter:blur(7px);
+      }
+    }
+    &_blur-pic-9 {
+      &::after {
+        content: '';
+        background: url(../img/pictur-mini-carous/pictur-mini-9.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 16px;
+        left: 0;
+        opacity: .2;
+        filter:blur(7px);
+      }
+    }
+    &_blur-pic-10 {
+      &::after {
+        content: '';
+        background: url(../img/pictur-mini-carous/pictur-mini-10.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 16px;
+        left: 0;
+        opacity: .2;
+        filter:blur(7px);
+      }
+    }
+    &_blur-pic-11 {
+      &::after {
+        content: '';
+        background: url(../img/pictur-mini-carous/pictur-mini-11.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 16px;
+        left: 0;
+        opacity: .2;
+        filter:blur(7px);
+      }
+    }
+    &_blur-pic-12 {
+      &::after {
+        content: '';
+        background: url(../img/pictur-mini-carous/pictur-mini-12.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 16px;
+        left: 0;
+        opacity: .2;
+        filter:blur(7px);
+      }
+    }
+    &_blur-pic-13 {
+      &::after {
+        content: '';
+        background: url(../img/pictur-mini-carous/pictur-mini-13.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 16px;
+        left: 0;
+        opacity: .2;
+        filter:blur(7px);
+      }
+    }
+    &_blur-pic-14 {
+      &::after {
+        content: '';
+        background: url(../img/pictur-mini-carous/pictur-mini-14.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 16px;
+        left: 0;
+        opacity: .2;
+        filter:blur(7px);
+      }
+    }
+    &_blur-pic-15 {
+      &::after {
+        content: '';
+        background: url(../img/pictur-mini-carous/pictur-mini-15.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 16px;
+        left: 0;
+        opacity: .2;
+        filter:blur(7px);
+      }
+    }
+    &_blur-pic-16 {
+      &::after {
+        content: '';
+        background: url(../img/pictur-mini-carous/pictur-mini-16.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 16px;
+        left: 0;
+        opacity: .2;
+        filter:blur(7px);
+      }
+    }
+    &_blur-pic-17 {
+      &::after {
+        content: '';
+        background: url(../img/pictur-mini-carous/pictur-mini-17.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 16px;
+        left: 0;
+        opacity: .2;
+        filter:blur(7px);
+      }
+    }
+    &_blur-pic-18 {
+      &::after {
+        content: '';
+        background: url(../img/pictur-mini-carous/pictur-mini-18.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 16px;
+        left: 0;
+        opacity: .2;
+        filter:blur(7px);
+      }
+    }
+  }
+  &__price {
+    color: $textColor;
+    // font-size: 16px;
+    @include adaptiv(16, 11);
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+  }
+}

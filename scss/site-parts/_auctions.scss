@@ -1,0 +1,154 @@
+.auctions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 123px;
+  &__title {
+    font-size: 36px;
+  }
+}
+.auctions-carousel {
+  margin-top: 92px;
+  display: flex;
+  &__item {
+    // max-width: 400px;
+    max-width: 424px;
+    padding: 12px;
+    margin-right: 24px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__picture {
+    position: relative;
+    &_blur-1 {
+      &::after {
+        content: '';
+        background: url(../img/auctions/tristique-diam.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        opacity: .2;
+        filter:blur(12px);
+      }
+    }
+    &_blur-2 {
+      &::after {
+        content: '';
+        background: url(../img/auctions/vulputate.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        opacity: .2;
+        filter:blur(12px);
+      }
+    }
+    &_blur-3 {
+      &::after {
+        content: '';
+        background: url(../img/auctions/dui-accumsan.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        opacity: .2;
+        filter:blur(12px);
+      }
+    }
+    &_blur-4 {
+      &::after {
+        content: '';
+        background: url(../img/auctions/senectus-adipiscing.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        opacity: .2;
+        filter:blur(12px);
+      }
+    }
+    &_blur-5 {
+      &::after {
+        content: '';
+        background: url(../img/auctions/mattis-diam.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        opacity: .2;
+        filter:blur(12px);
+      }
+    }
+    img {
+      max-width: 400px;
+      // max-width: prc(400);
+      border-radius: 20px;
+      position: relative;
+      z-index: 1;
+      
+    }
+  }
+  &__title-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 26px;
+  }
+  &__title {
+    max-width: 60%;
+    letter-spacing: 0.2px;
+    font-size: 20px;
+  }
+  &__price {
+    color: $priceColor;
+    background: rgba(42, 39, 201, .1);
+    padding: 8px 14px;
+    border-radius: 4px;
+  }
+  &__time {
+    display: flex;
+    align-items: center;
+    padding-bottom: 28px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+  }
+  ._icon-time:before {
+      padding-right: 12px;
+    }
+}
+.bidding-people {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid;
+  padding-top: 20px;
+  color: $textColor;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  &__avatars {
+    display: flex;
+  }
+  &__counter {
+    display: flex;
+    align-items: center;
+  }
+  ._icon-heart {
+    &::before {
+      margin-right: 10px;
+      cursor: pointer;
+      // &:hover {
+      //   color: #fb4539;
+      // }
+    }
+    
+  }
+}

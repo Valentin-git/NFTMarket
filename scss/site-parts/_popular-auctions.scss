@@ -1,0 +1,116 @@
+.popular-auctions {
+  padding-bottom: 100px;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__over {
+    color: $serchColor;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+  }
+  &__title {
+    margin-top: 10px;
+    margin-bottom: 38px;
+    font-size: 36px;
+    font-weight: 800;
+  }
+}
+.popular-auctions-menu {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 72px;
+  &__item {
+    padding: 8px;
+    color: $textColor;
+    font-size: 16px;
+    border: 2px solid #E2E2ED;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
+.hottest-sale-offers-carous {
+  &__picture {
+    &_blur-pop-1 {
+      &::after {
+        content: '';
+        background: url(../img/popular-auctions/faucibus-habitasse.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        opacity: .2;
+        filter:blur(25px);
+      }
+    }
+    &_blur-pop-2 {
+      &::after {
+        content: '';
+        background: url(../img/popular-auctions/diam-purus-sagittis.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        opacity: .2;
+        filter:blur(25px);
+      }
+    }
+    &_blur-pop-3 {
+      &::after {
+        content: '';
+        background: url(../img/popular-auctions/nascetur-mauris-viverra.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        opacity: .2;
+        filter:blur(25px);
+      }
+    }
+    &_blur-pop-4 {
+      &::after {
+        content: '';
+        background: url(../img/popular-auctions/amet-maecenas.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        opacity: .2;
+        filter:blur(25px);
+      }
+    }
+    &_blur-pop-5 {
+      &::after {
+        content: '';
+        background: url(../img/popular-auctions/tellus-duis-neque.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        opacity: .2;
+        filter:blur(25px);
+      }
+    }
+    &_blur-pop-6 {
+      &::after {
+        content: '';
+        background: url(../img/popular-auctions/odio-lacus-neque.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        opacity: .2;
+        filter:blur(25px);
+      }
+    }
+  }
+}

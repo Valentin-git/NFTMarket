@@ -1,0 +1,86 @@
+.footer {
+  min-height: 397px;
+}
+.footer-col {
+  display: flex;
+  &__item {
+    width: 33.333%;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #E2E2ED;
+  }
+  &__text {
+    color: $textColor;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+  }
+}
+.footer-support {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  &__link {
+    color: $textColor;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+  }
+}
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 37px;
+  &__item {
+
+  }
+  &__link {
+    color: $titleColor;
+    font-size: 16px;
+  }
+}
+.social {
+  display: flex;
+  gap: 25px;
+  margin-top: 70px;
+  &__link {
+    color: $textColor;
+  }
+  &__icon {
+    &:hover {
+      color: $priceColor;
+    }
+  }
+}
+.footer-news {
+  position: relative;
+  &__input {
+    // min-height: 52px;
+    min-height: rem(52);
+    width: 100%;
+    color: $textColor;
+    padding: 0 32px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+
+    border: 0;
+    border-radius: 16px;
+    background: $whiteColor;
+    -webkit-box-shadow: 0px 25px 75px 0px rgba(6, 7, 20, 0.1);
+    -moz-box-shadow: 0px 25px 75px 0px rgba(6, 7, 20, 0.1);
+    box-shadow: 0px 25px 75px 0px rgba(6, 7, 20, 0.1);
+  }
+  &__btn {
+    position: absolute;
+    right: 18px;
+    top: 15px;
+    color: $priceColor;
+    background: 0;
+    font-size: 16px;
+    font-weight: 800;
+  }
+}
