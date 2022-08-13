@@ -20,7 +20,7 @@
 }
 .footer-support {
   display: flex;
-  gap: 40px;
+  column-gap: 40px;
   flex-wrap: wrap;
   &__link {
     color: $textColor;
