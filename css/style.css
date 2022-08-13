@@ -1506,7 +1506,7 @@ fieldset {
 
 .footer-col__item {
   width: 33.333%;
-  padding: 48px;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1537,7 +1537,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   gap: 9px;
-  margin-bottom: 37px;
+  margin-bottom: 2.3125rem;
 }
 
 .footer-menu__link {
@@ -1564,23 +1564,23 @@ fieldset {
 }
 
 .footer-news__input {
-  min-height: 3.25rem;
+  height: 3.25rem;
   width: 100%;
   color: #7780a1;
-  padding: 0 32px;
+  padding: 0 2rem;
   font-size: 16px;
   font-weight: 400;
   font-family: 'Inter', sans-serif;
   border: 0;
-  border-radius: 16px;
+  border-radius: 1rem;
   background: white;
   box-shadow: 0px 25px 75px 0px rgba(6, 7, 20, 0.1);
 }
 
 .footer-news__btn {
   position: absolute;
-  right: 18px;
-  top: 15px;
+  right: 1.125rem;
+  top: 0.9375rem;
   color: #2a27c9;
   background: 0;
   font-size: 16px;
