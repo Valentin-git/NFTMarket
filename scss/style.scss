@@ -70,28 +70,29 @@ fieldset {
 //   margin-right: calc(-0.5 * var(--bs-gutter-x));
 //   margin-left: calc(-0.5 * var(--bs-gutter-x));
 // }
-.row > * {
-  flex-shrink: 0;
-  width: 100%;
-  max-width: 100%;
-  --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
-  margin-top: var(--bs-gutter-y);
-}
+// .row > * {
+//   flex-shrink: 0;
+//   width: 100%;
+//   max-width: 100%;
+//   --bs-gutter-x: 1.5rem;
+//   --bs-gutter-y: 0;
+//   padding-right: calc(var(--bs-gutter-x) * 0.5);
+//   padding-left: calc(var(--bs-gutter-x) * 0.5);
+//   margin-top: var(--bs-gutter-y);
+// }
 // [class*="container"]
 .container {
-  max-width: 1416px;
+  max-width: 1452px;
   // max-width: 1392px;
   margin: 0 auto;
-  // padding: 0 40px;
+  // padding: 0 1.5rem;
+  padding: 0 rem(30);
 }
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 1.5rem;
-}
+// .row {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin: 0 1.5rem;
+// }
 .container-fluid {
   max-width: 1833px;
   // padding: 0 40px;
