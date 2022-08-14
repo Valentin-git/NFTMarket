@@ -173,7 +173,8 @@
   }
   &__title {
     color: $titleColor;
-    width: 837px;
+    width: 50%;
+    // width: 837px;
     // font-size: 120px;
     @include adaptiv(120, 35);
     position: relative;

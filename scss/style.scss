@@ -101,18 +101,19 @@ fieldset {
   display: flex;
   flex: 0 0 auto;
   &__item {   
-   margin-right: 16px;
+   margin-right: rem(16);
    display: flex;
    &:last-child {
     margin-right: 0;
    }
   }
   &__link {
-    padding: 14px 24px;
-    border-radius: 12px;
+    padding: rem(14) rem(24);
+    border-radius: rem(12);
     text-decoration: none;
+    @include adaptiv(16, 14);
     font-weight: 600;
-    margin-right: 16px;
+    margin-right: rem(16);
     color: $textColor;
     border: 2px solid $textColor;
     &:last-child {
@@ -240,7 +241,8 @@ fieldset {
     margin-top: 9px;
     margin-bottom: 27px;
     line-height: 1;
-    font-size: 64px;
+    // font-size: 64px;
+    @include adaptiv(64, 30);
     &_fz {
       font-size: 48px;
     }

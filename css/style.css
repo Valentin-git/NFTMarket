@@ -195,7 +195,7 @@ fieldset {
 }
 
 .common-btn__item {
-  margin-right: 16px;
+  margin-right: 1rem;
   display: flex;
 }
 
@@ -204,13 +204,25 @@ fieldset {
 }
 
 .common-btn__link {
-  padding: 14px 24px;
-  border-radius: 12px;
+  padding: 0.875rem 1.5rem;
+  border-radius: 0.75rem;
   text-decoration: none;
   font-weight: 600;
-  margin-right: 16px;
+  margin-right: 1rem;
   color: #7780a1;
   border: 2px solid #7780a1;
+}
+
+@media (max-width: 767px) {
+  .common-btn__link {
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .common-btn__link {
+    font-size: calc(14px + 2 * (100vw  / 1920));
+  }
 }
 
 .common-btn__link:last-child {
@@ -339,7 +351,18 @@ fieldset {
   margin-top: 9px;
   margin-bottom: 27px;
   line-height: 1;
-  font-size: 64px;
+}
+
+@media (max-width: 767px) {
+  .total-block__title {
+    font-size: calc(30px + 57.8 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .total-block__title {
+    font-size: calc(30px + 34 * (100vw  / 1920));
+  }
 }
 
 .total-block__title_fz {
@@ -557,7 +580,7 @@ fieldset {
 
 .intro__title {
   color: #060714;
-  width: 837px;
+  width: 50%;
   position: relative;
   text-align: center;
 }
@@ -686,9 +709,7 @@ fieldset {
 }
 
 .auctions-carousel__item {
-  max-width: 424px;
-  padding: 12px;
-  margin-right: 24px;
+  padding: 24px;
 }
 
 .auctions-carousel__item:last-child {
@@ -776,6 +797,7 @@ fieldset {
 
 .auctions-carousel__title {
   max-width: 60%;
+  line-height: 25px;
   letter-spacing: 0.2px;
   font-size: 20px;
 }
@@ -1096,6 +1118,7 @@ fieldset {
   justify-content: center;
   align-items: center;
   column-gap: 103px;
+  row-gap: 35px;
   flex-wrap: wrap;
 }
 
@@ -1112,8 +1135,19 @@ fieldset {
 
 .detail-numb__numb {
   color: #060714;
-  font-size: 48px;
   font-weight: 800;
+}
+
+@media (max-width: 767px) {
+  .detail-numb__numb {
+    font-size: calc(35px + 22.1 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .detail-numb__numb {
+    font-size: calc(35px + 13 * (100vw  / 1920));
+  }
 }
 
 .join-now {
@@ -1609,12 +1643,24 @@ fieldset {
   }
 }
 
+@media (max-width: 842px) {
+  .intro__title {
+    width: 100%;
+  }
+}
+
 @media (max-width: 767.98px) {
   .footer-col {
     flex-wrap: wrap;
   }
   .footer-col__item {
     width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .common-btn__link {
+    padding: 12px 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */

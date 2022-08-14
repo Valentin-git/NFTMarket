@@ -55,6 +55,14 @@
 @media (max-width: 885px) {
   
 }
+//------------------------------- MAX-WIDTH 841 ---------------------//
+@media (max-width: 842px) {
+  .intro {
+    &__title {
+      width: 100%;
+    }
+  }
+}
 //------------------------------- MAX-WIDTH 767.98 landscape phones ---------------------//
 @media (max-width: 767.98px) {
   .footer-col {
@@ -74,7 +82,11 @@
 }
 //------------------------------- MAX-WIDTH 500 ---------------------//
 @media (max-width: 500px) {
-  
+  .common-btn {
+    &__link {
+      padding: 12px 15px;
+    }
+  }
 }
 //------------------------------- MAX-WIDTH 418 ---------------------//
 @media (max-width: 418px) {
