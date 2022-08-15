@@ -1,3 +1,4 @@
+@use 'sass:math';
 @import 'common/fonts';
 @import 'common/icons';
 @import 'common/restet';
@@ -11,6 +12,8 @@
 
 body {
   // font-family: 'Inter', sans-serif;
+  // font-size: $fontSize;
+  font-size: rem(16);
   font-family: 'Sora', sans-serif;
 }
 
@@ -82,11 +85,11 @@ fieldset {
 // }
 // [class*="container"]
 .container {
-  max-width: 1452px;
+  max-width: $maxWidthContainer;
   // max-width: 1392px;
   margin: 0 auto;
   // padding: 0 1.5rem;
-  padding: 0 rem(30);
+  padding: 0 $containerPadding;
 }
 // .row {
 //   display: flex;
@@ -97,6 +100,54 @@ fieldset {
   max-width: 1833px;
   // padding: 0 40px;
 }
+
+// burger---------------------------------------//
+.icon-menu {
+  display: none;
+  @media (max-width: $tablet) {
+    display: block;
+    position: relative;
+    // width: 30px;
+    flex: 0 0 30px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 5;
+    span,
+    &::before,
+    &::after {
+      content: "";
+      transform: all 0.3s ease 0s;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: #000;
+    } 
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+    span {
+      top: calc(50% - 1px);
+    }
+    .menu-open & {
+      span {
+        transform: scale(0);
+      }
+      &::before {
+        transform: rotate(-45deg);
+        top: calc(50% - 1px);
+      }
+      &::after {
+        transform: rotate(45deg);
+        bottom: calc(50% - 1px);
+      }
+    }
+  }
+}
+// <button type="button" class="icon-menu"></button>
 .common-btn {
   display: flex;
   flex: 0 0 auto;

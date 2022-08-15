@@ -5,7 +5,8 @@
   display: flex;
   &__col {
     margin-right: 24px;
-    width: 448px;
+    // width: 448px;
+    width: 33.333%;
     overflow: hidden;
     &:last-child {
       margin-right: 0;
@@ -18,9 +19,10 @@
   border: 1px solid #E2E2ED;
   border-radius: 20px;
   &__title {
-    width: 99%;
+    // width: 99%;
     margin-bottom: 53px;
-    font-size: 32px;
+    // font-size: 32px;
+    @include adaptiv(32, 20);
   }
 }
 .hottest-sale-offers-carous {
@@ -45,29 +47,31 @@
     &_blur-min-1 {
       &::after {
         content: '';
-        background: url(../img/hottest-offers/hottest-sale-offers-blur.jpg) no-repeat;
+        background: url(../img/hottest-offers/hottest-sale-offers.jpg) no-repeat;
         width: 100%;
         height: 100%;
         position: absolute;
         top: 10px;
         left: 0;
+        opacity: .2;
         filter:blur(25px);
       }
     }
     &_blur-min-2 {
       &::after {
         content: '';
-        background: url(../img/hottest-offers/hottest-sale-offers-blur2.jpg) no-repeat;
+        background: url(../img/hottest-offers/fames-habitasesse.jpg) no-repeat;
         width: 100%;
         height: 100%;
         position: absolute;
         top: 10px;
         left: 0;
+        opacity: .2;
         filter:blur(25px);
       }
     }
     img {
-      min-height: 355px;
+      // min-height: 355px;
       position: relative;
       z-index: 1;
       border-radius: 20px;
@@ -102,6 +106,7 @@
 }
 .get-started-creating {
   background: url(../img/hottest-offers/get-started-box.png) no-repeat;
+  background-size: contain;
   width: 100%;
   height: 100%;
   padding: 40px;

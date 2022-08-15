@@ -1,3 +1,4 @@
+@use 'sass:math';
 @font-face {
   font-family: icons;
   font-display: swap;
@@ -130,8 +131,8 @@ ol {
   list-style: none;
 }
 
-@use 'sass:math';
 body {
+  font-size: 1rem;
   font-family: 'Sora', sans-serif;
 }
 
@@ -182,11 +183,55 @@ fieldset {
 .container {
   max-width: 1452px;
   margin: 0 auto;
-  padding: 0 1.875rem;
+  padding: 0 30px;
 }
 
 .container-fluid {
   max-width: 1833px;
+}
+
+.icon-menu {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .icon-menu {
+    display: block;
+    position: relative;
+    flex: 0 0 30px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .icon-menu span, .icon-menu::before, .icon-menu::after {
+    content: "";
+    transform: all 0.3s ease 0s;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #000;
+  }
+  .icon-menu::before {
+    top: 0;
+  }
+  .icon-menu::after {
+    bottom: 0;
+  }
+  .icon-menu span {
+    top: calc(50% - 1px);
+  }
+  .menu-open .icon-menu span {
+    transform: scale(0);
+  }
+  .menu-open .icon-menu::before {
+    transform: rotate(-45deg);
+    top: calc(50% - 1px);
+  }
+  .menu-open .icon-menu::after {
+    transform: rotate(45deg);
+    bottom: calc(50% - 1px);
+  }
 }
 
 .common-btn {
@@ -862,7 +907,7 @@ fieldset {
 
 .hottest-offers__col {
   margin-right: 24px;
-  width: 448px;
+  width: 33.333%;
   overflow: hidden;
 }
 
@@ -878,9 +923,19 @@ fieldset {
 }
 
 .hottest-sale-offers__title {
-  width: 99%;
   margin-bottom: 53px;
-  font-size: 32px;
+}
+
+@media (max-width: 767px) {
+  .hottest-sale-offers__title {
+    font-size: calc(20px + 20.4 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .hottest-sale-offers__title {
+    font-size: calc(20px + 12 * (100vw  / 1920));
+  }
 }
 
 .hottest-sale-offers-carous {
@@ -911,28 +966,29 @@ fieldset {
 
 .hottest-sale-offers-carous__picture_blur-min-1::after {
   content: '';
-  background: url(../img/hottest-offers/hottest-sale-offers-blur.jpg) no-repeat;
+  background: url(../img/hottest-offers/hottest-sale-offers.jpg) no-repeat;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 10px;
   left: 0;
+  opacity: .2;
   filter: blur(25px);
 }
 
 .hottest-sale-offers-carous__picture_blur-min-2::after {
   content: '';
-  background: url(../img/hottest-offers/hottest-sale-offers-blur2.jpg) no-repeat;
+  background: url(../img/hottest-offers/fames-habitasesse.jpg) no-repeat;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 10px;
   left: 0;
+  opacity: .2;
   filter: blur(25px);
 }
 
 .hottest-sale-offers-carous__picture img {
-  min-height: 355px;
   position: relative;
   z-index: 1;
   border-radius: 20px;
@@ -962,6 +1018,7 @@ fieldset {
 
 .get-started-creating {
   background: url(../img/hottest-offers/get-started-box.png) no-repeat;
+  background-size: contain;
   width: 100%;
   height: 100%;
   padding: 40px;
@@ -1628,12 +1685,26 @@ fieldset {
 }
 
 @media (max-width: 991.98px) {
+  .common-btn {
+    display: none;
+  }
+  .menu-nav {
+    display: none;
+  }
   .sapien__inner {
     flex-direction: column-reverse;
     flex-wrap: wrap;
   }
   .total-block__content {
     width: 100%;
+  }
+  .hottest-offers {
+    flex-wrap: wrap;
+  }
+  .hottest-offers__col {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
   .tristique-scelerisque {
     flex-wrap: wrap;

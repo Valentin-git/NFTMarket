@@ -1,4 +1,76 @@
-//---------------------------------------- colors ----------------------------------------//
+//---------------------------------------- Settings --------------------------------------//
+// Минимальная ширина страницы
+$minWidth: 320;
+
+// Ширина полотна (макета)
+$maxWidth: 1920;
+
+// Ширина ограничивающего контейнера (0 = нет ограничения)
+$maxWidthContainer: 1452px;
+
+// Ощий отступ у контейнера
+// (30 = 15px слева и справа, 0 = нет отсупа)
+$containerPadding: 30px;
+
+// Тип адаптива
+// 1 = отзывчивость (у контейнера не брейкпоинтов),
+// 2 = по брейк-поинтам (контейнер меняет свою ширину по брейк-поинтам)
+$responsiveType: 1;
+
+// Ширина срабатывания первого брейкпоинта
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// Брейк-поинты
+$pc: em($containerWidth); // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+$tablet: 991.98px; // Планшеты, некоторые телефоны в горизонтальном положении
+$mobile: 767.98px; // Телефоны L
+$mobileSmall: 479.98px; // Телефоны S
+
+//
+// @if ($responsiveType==1) {
+//   // Отзывчивая
+//   [class*="container"] {
+//     @if ($maxWidthContainer>0) {
+//       max-width: rem($maxWidthContainer);
+//       box-sizing: border-box;
+//       margin: 0 auto;
+//     }
+//     @if ($containerPadding>0) {
+//       padding: 0 rem(math.div($containerPadding, 2));
+//     }
+//   }
+// } @else {
+//   // По брейк-поинтам
+//   [class*="container"] {
+//     margin: 0 auto;
+//     @if ($maxWidthContainer>0) {
+//       max-width: rem($maxWidthContainer);
+//       box-sizing: border-box;
+//     } @else {
+//         @if ($containerPadding>0) {
+//           padding: 0 rem(math.div($containerPadding, 2));
+//         }
+//     }
+//     @media (max-width: $pc) {
+//       max-width: rem(970);
+//     }
+//     @media (max-width: $tablet) {
+//       max-width: rem(750);
+//     }
+//     @media (max-width: $mobile) {
+//       max-width: none;
+//       @if ($containerPadding>0 and $maxWidthContainer>0) {
+//         padding: 0 rem(math.div($containerPadding, 2));
+//       }
+//     }
+//   }
+// }
+
+//---------------------------------------- Font/Size --------------------------------------//
+// $fontFamily: "Montserrat"; // Шрифт по умолчанию
+$fontSize: rem(18); // Размер шрифта по умолчанию
+
+//---------------------------------------- Colors -----------------------------------------//
 // кнопки: контакты,акаунт
 $gradientBtn: linear-gradient(90deg, rgba(71,69,208,1) 0%, rgba(42,39,201,1) 100%);
 
@@ -29,4 +101,3 @@ $shadowSearch: 0px 25px 75px 0px rgba(6, 7, 20, 0.1);
 // форма поиск
 $searchShadow: 0px 25px 75px 0px rgba(6, 7, 20, 0.1);
 
-//---------------------------------------- font-size --------------------------------------//

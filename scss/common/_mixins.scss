@@ -1,7 +1,5 @@
 
 //------------------------------- Adaptive font size ---------------------//
-$maxWidth: 1920;
-
 @mixin adaptiv($pcSize, $mobSize) {
   $addSize: $pcSize - $mobSize;
   $addMobSize: $addSize + $addSize * 0.7;
@@ -24,25 +22,21 @@ $maxWidth: 1920;
 
 
 
-@use 'sass:math';
-//------------------------------- Convert px to % ---------------------//
+//------------------------------- Convert px to % -----------------------//
 // @function prc($pxOne, $pxTwo) {
 //   $result: math.div($pxOne, $pxTwo) * 100%;
 //   @return $result;
 // }
 
 //------------------------------- Convert px to rem ---------------------//
-// @function rem($px) {
-//   $result: math.div($px, 16) + rem; 
-//   @return $result;
-// }
 @function rem($value) {
   $remValue: ($value / 16) + rem; 
   @return $remValue;
 }
-//------------------------------- Convert px to em ---------------------//
-// @function em($px) {
-//   $result: math.div($px, 16) + em;
-//   @return $result;
-// }
 
+//------------------------------- Convert px to em ---------------------//
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}

@@ -27,7 +27,13 @@
   }
 }
 //------------------------------- MAX-WIDTH 991.98 tablets ---------------------//
-@media (max-width: 991.98px) {
+@media (max-width: $tablet) {
+  .common-btn {
+    display: none;
+  }
+  .menu-nav {
+    display: none;
+  }
   // sapien
   .sapien {
     &__inner {
@@ -38,6 +44,14 @@
   .total-block {
     &__content {
       width: 100%;
+    }
+  }
+  .hottest-offers {
+    flex-wrap: wrap;
+    &__col {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
     }
   }
   // tristique-scelerisque
