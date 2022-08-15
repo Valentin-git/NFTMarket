@@ -78,7 +78,12 @@
   }
 }
 //------------------------------- MAX-WIDTH 767.98 landscape phones ---------------------//
-@media (max-width: 767.98px) {
+@media (max-width: $mobile) {
+  .auctions-carousel {
+    &__item {
+      padding: 12px;
+    }
+  }
   .footer-col {
     flex-wrap: wrap;
     &__item {
@@ -96,6 +101,11 @@
 }
 //------------------------------- MAX-WIDTH 500 ---------------------//
 @media (max-width: 500px) {
+  .auctions-carousel {
+    &__item {
+      padding: 10px;
+    }
+  }
   .common-btn {
     &__link {
       padding: 12px 15px;

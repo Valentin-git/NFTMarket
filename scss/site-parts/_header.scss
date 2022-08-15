@@ -18,8 +18,6 @@
     &_pos-2 {
       top: 731px;
       left: 358px;
-      // top: rem(731);
-      // left: rem(358);
     }
     &_pos-3 {
       top: 336px;
@@ -46,7 +44,7 @@
     &_blur-1 {
       &::after {
         content: '';
-        background: url(../img/header/img-1.svg) no-repeat;
+        background: url(../img/header/image-1.svg) no-repeat;
         width: 100%;
         height: 100%;
         position: absolute;
