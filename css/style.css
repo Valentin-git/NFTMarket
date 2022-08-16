@@ -200,6 +200,7 @@ fieldset {
     position: relative;
     flex: 0 0 30px;
     height: 18px;
+    background: 0;
     cursor: pointer;
     z-index: 5;
   }
@@ -618,9 +619,20 @@ fieldset {
   color: #7780a1;
   margin-bottom: 10px;
   font-family: 'Inter', sans-serif;
-  font-size: 15px;
   font-weight: 500;
   text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .intro__text {
+    font-size: calc(13px + 3.4 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .intro__text {
+    font-size: calc(13px + 2 * (100vw  / 1920));
+  }
 }
 
 .intro__title {
@@ -670,8 +682,19 @@ fieldset {
   color: #7780a1;
   margin-top: 15px;
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
   font-weight: 400;
+}
+
+@media (max-width: 767px) {
+  .intro__subtitle {
+    font-size: calc(18px + 10.2 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .intro__subtitle {
+    font-size: calc(18px + 6 * (100vw  / 1920));
+  }
 }
 
 .search {
@@ -692,10 +715,21 @@ fieldset {
 }
 
 .search__input {
-  font-size: 16px;
   font-weight: 400;
   font-family: 'Inter', sans-serif;
   border: 0;
+}
+
+@media (max-width: 767px) {
+  .search__input {
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .search__input {
+    font-size: calc(14px + 2 * (100vw  / 1920));
+  }
 }
 
 .search ::-webkit-input-placeholder {
@@ -708,7 +742,6 @@ fieldset {
 
 .search__select {
   color: #bbc0d0;
-  font-size: 16px;
   font-weight: 400;
   font-family: 'Inter', sans-serif;
   border: 1px solid white;
@@ -717,6 +750,18 @@ fieldset {
   padding-right: 46px;
   margin-left: 109px;
   margin-right: 48px;
+}
+
+@media (max-width: 767px) {
+  .search__select {
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .search__select {
+    font-size: calc(14px + 2 * (100vw  / 1920));
+  }
 }
 
 .search__btn {
@@ -1696,6 +1741,9 @@ fieldset {
 }
 
 @media (max-width: 991.98px) {
+  .intro {
+    margin-top: 80px;
+  }
   .common-btn {
     display: none;
   }
@@ -1732,6 +1780,20 @@ fieldset {
 }
 
 @media (max-width: 767.98px) {
+  .intro {
+    margin-top: 55px;
+  }
+  .search__gruop {
+    min-height: 70px;
+  }
+  .search__select {
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-right: 0;
+  }
+  .search::placeholder {
+    width: 100%;
+  }
   .auctions-carousel__item {
     padding: 12px;
   }
@@ -1740,6 +1802,21 @@ fieldset {
   }
   .footer-col__item {
     width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .intro {
+    margin-top: 20px;
+  }
+  .search__gruop {
+    padding: 0 15px;
+    min-height: 60px;
+  }
+  .search__select {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 5px;
   }
 }
 
