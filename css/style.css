@@ -183,7 +183,7 @@ fieldset {
 .container {
   max-width: 1452px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 20px;
 }
 
 .container-fluid {
@@ -663,13 +663,13 @@ fieldset {
 
 @media (max-width: 767px) {
   .intro__title {
-    font-size: calc(35px + 144.5 * ((100vw - 320px) / 1920));
+    font-size: calc(40px + 136 * ((100vw - 320px) / 1920));
   }
 }
 
 @media (min-width: 767px) {
   .intro__title {
-    font-size: calc(35px + 85 * (100vw  / 1920));
+    font-size: calc(40px + 80 * (100vw  / 1920));
   }
 }
 
