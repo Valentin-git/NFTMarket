@@ -35,15 +35,6 @@ fieldset {
   flex-direction: column;
 }
 
-// .container {
-//   --bs-gutter-x: 1.5rem;
-//   --bs-gutter-y: 0;
-//   width: 100%;
-//   padding-right: calc(var(--bs-gutter-x) * 0.5);
-//   padding-left: calc(var(--bs-gutter-x) * 0.5);
-//   margin-right: auto;
-//   margin-left: auto;
-// }
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
@@ -64,25 +55,7 @@ fieldset {
     max-width: 1320px;
   }
 }
-// .row {
-//   --bs-gutter-x: 1.5rem;
-//   --bs-gutter-y: 0;
-//   display: flex;
-//   flex-wrap: wrap;
-//   margin-top: calc(-1 * var(--bs-gutter-y));
-//   margin-right: calc(-0.5 * var(--bs-gutter-x));
-//   margin-left: calc(-0.5 * var(--bs-gutter-x));
-// }
-// .row > * {
-//   flex-shrink: 0;
-//   width: 100%;
-//   max-width: 100%;
-//   --bs-gutter-x: 1.5rem;
-//   --bs-gutter-y: 0;
-//   padding-right: calc(var(--bs-gutter-x) * 0.5);
-//   padding-left: calc(var(--bs-gutter-x) * 0.5);
-//   margin-top: var(--bs-gutter-y);
-// }
+
 // [class*="container"]
 .container {
   max-width: $maxWidthContainer;
@@ -91,11 +64,7 @@ fieldset {
   // padding: 0 1.5rem;
   padding: 0 $containerPadding;
 }
-// .row {
-//   display: flex;
-//   flex-wrap: wrap;
-//   margin: 0 1.5rem;
-// }
+
 .container-fluid {
   max-width: 1833px;
   // padding: 0 40px;
