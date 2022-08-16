@@ -5,6 +5,7 @@
 }
 .join-now-col {
   background: url(../img/join-now/join-now.jpg) no-repeat;
+  background-size: cover;
   width: 100%;
   height: 100%;
   padding-left: 118px;
@@ -78,17 +79,20 @@
     column-gap: 22px;
   }
   &__title {
-    font-size: 17px;
+    // font-size: 17px;
+    @include adaptiv(17, 12);
     font-weight: 800;
   }
   &__text {
+    @include adaptiv(16, 11);
     font-family: 'Inter', sans-serif;
   }
   &__price {
     color: #2a27c9;
     background: rgba(42, 39, 201, 0.1);
     padding: 6px 10px;
-    font-size: 13px;
+    // font-size: 13px;
+    @include adaptiv(13, 10);
     border-radius: 4px
   }
   &__item {

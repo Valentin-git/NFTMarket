@@ -5,7 +5,8 @@
   align-items: center;
   margin-bottom: 123px;
   &__title {
-    font-size: 36px;
+    // font-size: 36px;
+    @include adaptiv(36, 30);
   }
 }
 .auctions-carousel {

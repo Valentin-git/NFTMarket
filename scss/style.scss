@@ -2,7 +2,7 @@
 @import 'common/fonts';
 @import 'common/icons';
 @import 'common/restet';
-@import 'common/var';
+@import 'common/variable';
 @import 'common/mixins';
 
 
@@ -245,11 +245,12 @@ fieldset {
   &__content {
     width: 36%;
     &_width {
-      width: 43%;
+      width: 100%;
     }
     &_width-jn {
       width: 39%;
     }
+    // &_width {}
   }
   &__over {
     color: $serchColor;
@@ -276,6 +277,9 @@ fieldset {
     @include adaptiv(16, 13);
     font-weight: 400;
     font-family: 'Inter', sans-serif;
+    &_jn {
+      margin-bottom: 24px;
+    }
   }
 }
 .common-icon-text {

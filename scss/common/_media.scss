@@ -57,7 +57,9 @@
     margin-bottom: 150px;
   }
   .common-btn {
-    display: none;
+    &_hide {
+      display: none;
+    }
   }
   .menu-nav {
     display: none;
@@ -71,7 +73,30 @@
   }
   .total-block {
     &__content {
-      width: 100%;
+      // width: 100%;
+    }
+  }
+  .join-now-col {
+    padding-top: 70px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+  .user {
+    padding: 12px;
+    &_pos-1 {
+      top: 72px;
+      right: 46px;
+    }
+    &_pos-3 {
+      top: 189px;
+      right: -16px;
+    }
+    &_pos-4 {
+      top: 308px;
+      right: 67px;
+    }
+    &_pos-5 {
+      top: 295px;
     }
   }
   .hottest-offers {
@@ -102,6 +127,13 @@
   .intro {
     &__title {
       width: 100%;
+    }
+  }
+  .total-block {
+    &__content {
+      &_width-jn {
+        width: 46%;
+      }
     }
   }
 }
@@ -135,6 +167,35 @@
   .auctions-carousel {
     &__item {
       padding: 12px;
+    }
+  }
+  .user {
+    padding: 7px;
+    &__avatar {
+      margin-right: 10px;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    &__icon {
+      margin-right: 5px;
+    }
+    &_pos-1 {
+
+    }
+    &_pos-2 {
+      right: -242px;
+    }
+    &_pos-3 {
+      top: 165px;
+    }
+    &_pos-4 {
+      top: 251px
+    }
+    &_pos-5 {
+      top: 241px;
+      right: -212px;
     }
   }
   .footer-col {

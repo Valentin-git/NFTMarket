@@ -378,7 +378,7 @@ fieldset {
 }
 
 .total-block__content_width {
-  width: 43%;
+  width: 100%;
 }
 
 .total-block__content_width-jn {
@@ -440,6 +440,10 @@ fieldset {
   .total-block__text {
     font-size: calc(13px + 3 * (100vw  / 1920));
   }
+}
+
+.total-block__text_jn {
+  margin-bottom: 24px;
 }
 
 .common-icon-text {
@@ -808,8 +812,16 @@ fieldset {
   margin-bottom: 123px;
 }
 
-.auctions__title {
-  font-size: 36px;
+@media (max-width: 767px) {
+  .auctions__title {
+    font-size: calc(30px + 10.2 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .auctions__title {
+    font-size: calc(30px + 6 * (100vw  / 1920));
+  }
 }
 
 .auctions-carousel {
@@ -1311,6 +1323,7 @@ fieldset {
 
 .join-now-col {
   background: url(../img/join-now/join-now.jpg) no-repeat;
+  background-size: cover;
   width: 100%;
   height: 100%;
   padding-left: 118px;
@@ -1393,20 +1406,54 @@ fieldset {
 }
 
 .user__title {
-  font-size: 17px;
   font-weight: 800;
+}
+
+@media (max-width: 767px) {
+  .user__title {
+    font-size: calc(12px + 8.5 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .user__title {
+    font-size: calc(12px + 5 * (100vw  / 1920));
+  }
 }
 
 .user__text {
   font-family: 'Inter', sans-serif;
 }
 
+@media (max-width: 767px) {
+  .user__text {
+    font-size: calc(11px + 8.5 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .user__text {
+    font-size: calc(11px + 5 * (100vw  / 1920));
+  }
+}
+
 .user__price {
   color: #2a27c9;
   background: rgba(42, 39, 201, 0.1);
   padding: 6px 10px;
-  font-size: 13px;
   border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  .user__price {
+    font-size: calc(10px + 5.1 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .user__price {
+    font-size: calc(10px + 3 * (100vw  / 1920));
+  }
 }
 
 .user__item {
@@ -1807,7 +1854,7 @@ fieldset {
   .search {
     margin-bottom: 150px;
   }
-  .common-btn {
+  .common-btn_hide {
     display: none;
   }
   .menu-nav {
@@ -1817,8 +1864,28 @@ fieldset {
     flex-direction: column-reverse;
     flex-wrap: wrap;
   }
-  .total-block__content {
-    width: 100%;
+  .join-now-col {
+    padding-top: 70px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+  .user {
+    padding: 12px;
+  }
+  .user_pos-1 {
+    top: 72px;
+    right: 46px;
+  }
+  .user_pos-3 {
+    top: 189px;
+    right: -16px;
+  }
+  .user_pos-4 {
+    top: 308px;
+    right: 67px;
+  }
+  .user_pos-5 {
+    top: 295px;
   }
   .hottest-offers {
     flex-wrap: wrap;
@@ -1839,6 +1906,9 @@ fieldset {
 @media (max-width: 842px) {
   .intro__title {
     width: 100%;
+  }
+  .total-block__content_width-jn {
+    width: 46%;
   }
 }
 
@@ -1868,6 +1938,32 @@ fieldset {
   }
   .auctions-carousel__item {
     padding: 12px;
+  }
+  .user {
+    padding: 7px;
+  }
+  .user__avatar {
+    margin-right: 10px;
+  }
+  .user__avatar img {
+    width: 50px;
+    height: 50px;
+  }
+  .user__icon {
+    margin-right: 5px;
+  }
+  .user_pos-2 {
+    right: -242px;
+  }
+  .user_pos-3 {
+    top: 165px;
+  }
+  .user_pos-4 {
+    top: 251px;
+  }
+  .user_pos-5 {
+    top: 241px;
+    right: -212px;
   }
   .footer-col {
     flex-wrap: wrap;
