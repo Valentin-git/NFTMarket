@@ -296,13 +296,15 @@ fieldset {
     // font-size: 64px;
     @include adaptiv(64, 30);
     &_fz {
-      font-size: 48px;
+      // font-size: 48px;
+      @include adaptiv(48, 22);
     }
   }
   &__text {
     color: $textColor;
     margin-bottom: 57px;
-    font-size: 16px;
+    // font-size: 16px;
+    @include adaptiv(16, 13);
     font-weight: 400;
     font-family: 'Inter', sans-serif;
   }

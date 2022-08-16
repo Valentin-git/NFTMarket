@@ -16,10 +16,32 @@
 }
 //------------------------------- MAX-WIDTH 1399.99 desktops ---------------------//
 @media (max-width: 1399.99px) {
+  .join-now-col {
+    padding-left: 70px;
+    padding-bottom: 70px;
+  }
+  .total-block {
+    &__content {
+      &_width-jn {
+        width: 42%;
+      }
+    }
+  }
+  .user {
+    min-width: auto;
+  }
   
 }
 //------------------------------- MAX-WIDTH 1199.98 ---------------------//
 @media (max-width: 1199.98px) {
+  .user {
+    &_pos-1 {
+      right: 125px;
+    }
+    &_pos-4 {
+      right: 161px;
+    }
+  }
   .footer-col {
     &__item {
       padding: 30px;
@@ -30,6 +52,9 @@
 @media (max-width: $tablet) {
   .intro {
     margin-top: 80px;
+  }
+  .search {
+    margin-bottom: 150px;
   }
   .common-btn {
     display: none;
@@ -82,10 +107,14 @@
 }
 //------------------------------- MAX-WIDTH 767.98 landscape phones ---------------------//
 @media (max-width: $mobile) {
+  .logo {
+    flex: 0 0 150px;
+  }
   .intro {
     margin-top: 55px;
   }
   .search {
+    margin-bottom: 100px;
     &__gruop {
       min-height: 70px;
     }
@@ -96,6 +125,11 @@
     }
     &::placeholder {
       width: 100%;
+    }
+  }
+  .brands {
+    &__item {
+      margin-right: 60px;
     }
   }
   .auctions-carousel {
@@ -116,6 +150,9 @@
 }
 //------------------------------- MAX-WIDTH 575.98 portrait phones ---------------------//
 @media (max-width: 575.98px) {
+  .square-pos {
+    display: none;
+  }
   .intro {
     margin-top: 20px;
   }
@@ -128,6 +165,11 @@
       margin-left: 15px;
       margin-right: 15px;
       padding-left: 5px;
+    }
+  }
+  .brands {
+    &__item {
+      margin-right: 30px;
     }
   }
 }
@@ -146,5 +188,7 @@
 }
 //------------------------------- MAX-WIDTH 418 ---------------------//
 @media (max-width: 418px) {
-  
+  .popular-auctions-menu {
+    flex-wrap: wrap;
+  }
 }

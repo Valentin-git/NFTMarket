@@ -15,7 +15,8 @@
   &__title {
     margin-top: 10px;
     margin-bottom: 38px;
-    font-size: 36px;
+    // font-size: 36px;
+    @include adaptiv(36, 30);
     font-weight: 800;
   }
 }
@@ -26,7 +27,8 @@
   &__item {
     padding: 8px;
     color: $textColor;
-    font-size: 16px;
+    // font-size: 16px;
+    @include adaptiv(16, 13);
     border: 2px solid #E2E2ED;
     border-radius: 8px;
     cursor: pointer;

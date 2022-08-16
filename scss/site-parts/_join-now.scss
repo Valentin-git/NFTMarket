@@ -42,12 +42,14 @@
   }
   &_pos-4 {
     position: absolute;
-    bottom: 95px;
+    // bottom: 95px;
+    top: 360px;
     right: 252px;
   }
   &_pos-5 {
     position: absolute;
-    bottom: 76px;
+    // bottom: 76px;
+    top: 377px;
     right: -256px;
   }
   &::before {
