@@ -374,11 +374,7 @@ fieldset {
 }
 
 .total-block__content {
-  width: 36%;
-}
-
-.total-block__content_width {
-  width: 100%;
+  width: 46%;
 }
 
 .total-block__content_width-jn {
@@ -1864,6 +1860,9 @@ fieldset {
     flex-direction: column-reverse;
     flex-wrap: wrap;
   }
+  .total-block__content_width {
+    width: 100%;
+  }
   .join-now-col {
     padding-top: 70px;
     padding-left: 30px;
@@ -1913,6 +1912,15 @@ fieldset {
 }
 
 @media (max-width: 767.98px) {
+  .common-btn__link {
+    padding: 0.625rem 1rem;
+  }
+  .total-block__content_width-jn {
+    width: 50%;
+  }
+  .total-block__title {
+    margin-bottom: 17px;
+  }
   .logo {
     flex: 0 0 150px;
   }
@@ -1939,6 +1947,13 @@ fieldset {
   .auctions-carousel__item {
     padding: 12px;
   }
+  .detail-numb {
+    column-gap: 65px;
+  }
+  .join-now-col {
+    padding-left: 25px;
+    padding-bottom: 25px;
+  }
   .user {
     padding: 7px;
   }
@@ -1949,8 +1964,15 @@ fieldset {
     width: 50px;
     height: 50px;
   }
+  .user__items-conect {
+    column-gap: 10px;
+  }
   .user__icon {
     margin-right: 5px;
+    font-size: 12px;
+  }
+  .user_pos-1 {
+    right: 23px;
   }
   .user_pos-2 {
     right: -242px;
@@ -1960,16 +1982,41 @@ fieldset {
   }
   .user_pos-4 {
     top: 251px;
+    right: 46px;
   }
   .user_pos-5 {
     top: 241px;
     right: -212px;
+  }
+  .user__price {
+    padding: 4px 6px;
   }
   .footer-col {
     flex-wrap: wrap;
   }
   .footer-col__item {
     width: 100%;
+  }
+}
+
+@media (max-width: 646px) {
+  .total-block__content_width-jn {
+    width: 60%;
+  }
+  .user_pos-1 {
+    right: -85px;
+  }
+  .user_pos-2 {
+    display: none;
+  }
+  .user_pos-3 {
+    right: -113px;
+  }
+  .user_pos-4 {
+    right: -82px;
+  }
+  .user_pos-5 {
+    display: none;
   }
 }
 
@@ -2002,6 +2049,15 @@ fieldset {
   .brands__item {
     margin-right: 30px;
   }
+  .common-btn__link {
+    padding: 0.5rem 0.875rem;
+  }
+  .detail-numb {
+    row-gap: 50px;
+  }
+  .detail-numb__item {
+    width: 100%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -2010,6 +2066,15 @@ fieldset {
   }
   .common-btn__link {
     padding: 12px 15px;
+  }
+  .user {
+    display: none;
+  }
+  .total-block__content_width-jn {
+    width: 100%;
+  }
+  .join-now-col {
+    padding-right: 25px;
   }
 }
 

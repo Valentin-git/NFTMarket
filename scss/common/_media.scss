@@ -73,7 +73,9 @@
   }
   .total-block {
     &__content {
-      // width: 100%;
+      &_width {
+        width: 100%;
+      }
     }
   }
   .join-now-col {
@@ -139,6 +141,21 @@
 }
 //------------------------------- MAX-WIDTH 767.98 landscape phones ---------------------//
 @media (max-width: $mobile) {
+  .common-btn {
+    &__link {
+      padding: rem(10) rem(16);
+    }
+  }
+  .total-block {
+    &__content {
+      &_width-jn {
+        width: 50%;
+      }
+    } 
+    &__title {
+      margin-bottom: 17px;
+    }
+  }
   .logo {
     flex: 0 0 150px;
   }
@@ -169,6 +186,13 @@
       padding: 12px;
     }
   }
+  .detail-numb {
+    column-gap: 65px;
+  }
+  .join-now-col {
+    padding-left: 25px;
+    padding-bottom: 25px;
+  }
   .user {
     padding: 7px;
     &__avatar {
@@ -178,11 +202,15 @@
         height: 50px;
       }
     }
+    &__items-conect {
+      column-gap: 10px;
+    }
     &__icon {
       margin-right: 5px;
+      font-size: 12px;
     }
     &_pos-1 {
-
+      right: 23px;
     }
     &_pos-2 {
       right: -242px;
@@ -191,11 +219,15 @@
       top: 165px;
     }
     &_pos-4 {
-      top: 251px
+      top: 251px;
+      right: 46px;
     }
     &_pos-5 {
       top: 241px;
       right: -212px;
+    }
+    &__price {
+      padding: 4px 6px;
     }
   }
   .footer-col {
@@ -207,7 +239,30 @@
   }
 }
 @media (max-width: 646px) {
-  
+  .total-block {
+    &__content {
+      &_width-jn {
+        width: 60%;
+      }
+    }
+  }
+  .user {
+    &_pos-1 {
+      right: -85px;
+    }
+    &_pos-2 {
+      display: none;
+    }
+    &_pos-3 {
+      right: -113px;
+    }
+    &_pos-4 {
+      right: -82px;
+    }
+    &_pos-5 {
+      display: none;
+    }
+  }
 }
 //------------------------------- MAX-WIDTH 575.98 portrait phones ---------------------//
 @media (max-width: 575.98px) {
@@ -243,6 +298,17 @@
       margin-right: 30px;
     }
   }
+  .common-btn {
+    &__link {
+      padding: rem(8) rem(14);
+    }
+  }
+  .detail-numb {
+    row-gap: 50px;
+    &__item {
+      width: 100%;
+    }
+  }
 }
 //------------------------------- MAX-WIDTH 500 ---------------------//
 @media (max-width: 500px) {
@@ -255,6 +321,19 @@
     &__link {
       padding: 12px 15px;
     }
+  }
+  .user {
+    display: none;
+  }
+  .total-block {
+    &__content {
+      &_width-jn {
+        width: 100%;
+      }
+    }
+  }
+  .join-now-col {
+    padding-right: 25px;
   }
 }
 //------------------------------- MAX-WIDTH 418 ---------------------//
