@@ -11,11 +11,17 @@
     &:last-child {
       margin-right: 0;
     }
+    &_show {
+      overflow: inherit;
+    }
   }
 }
 .hottest-sale-offers {
   padding: 40px;
-  max-height: 841px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   border: 1px solid #E2E2ED;
   border-radius: 20px;
   &__title {
@@ -32,7 +38,8 @@
   }
   &__item {
     // max-width: 212px;
-    min-width: 205px;
+    // min-width: 205px;
+    width: 100%;
     margin-bottom: 64px;
     margin-right: 24px;
     &:last-child {
@@ -105,14 +112,36 @@
   }
 }
 .get-started-creating {
-  background: url(../img/hottest-offers/get-started-box.png) no-repeat;
-  background-size: contain;
+  background: #060714;
   width: 100%;
   height: 100%;
-  padding: 40px;
-  display: flex;
-  align-items: end;
+  position: relative;
   border-radius: 20px;
+  &::before {
+    content: "";
+    background: url(../img/hottest-offers/fingers.png) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+  }
+  &__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 40px 40px 40px;
+  }
+  // background: url(../img/hottest-offers/get-started-box.png) no-repeat;
+  // background-size: contain;
+  // width: 100%;
+  // height: 100%;
+  // padding: 40px;
+  // display: flex;
+  // align-items: end;
+  // border-radius: 20px;
   &__title {
     width: 75%;
     color: $whiteColor;
