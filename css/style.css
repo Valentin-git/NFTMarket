@@ -910,6 +910,7 @@ fieldset {
   align-items: center;
   margin-top: 24px;
   margin-bottom: 26px;
+  min-height: 75px;
 }
 
 .auctions-carousel__title {
