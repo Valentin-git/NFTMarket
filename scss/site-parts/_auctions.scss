@@ -118,14 +118,13 @@
     // font-size: 20px;
     @include adaptiv(20, 14);
 
-    overflow: hidden;
-    text-overflow: ellipsis;
+    /*! autoprefixer: off */
     display: -webkit-box;
+    -webkit-line-clamp: 2; // количество строк
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3; 
-    line-height: 20px; 
-    max-height: 60px; 
+    overflow: hidden;
   }
+  /*! autoprefixer: on */
   &__price {
     color: $priceColor;
     background: rgba(42, 39, 201, .1);

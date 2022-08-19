@@ -91,15 +91,15 @@
   }
   &__title {
     margin: 22px 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2; // Количество строк
-    line-height: 20px; // Для поддержки не-вебкит-браузеров, высота одной строки
-    max-height: 40px;
     @include adaptiv(16, 13);
+
+    /*! autoprefixer: off */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; // количество строк
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
+  /*! autoprefixer: on */
  .slick-list {
   // padding-right: 24px !important;
   // padding-left: 0 !important;

@@ -144,9 +144,9 @@ fieldset {
       color: $whiteColor;
       // padding: 16px 24px;
       background: $gradientBtn;
-      box-shadow: $shadowBlackBtn;
+      // box-shadow: $shadowBlackBtn;
       box-shadow: $shadowWhiteBtn;
-      border: 2px solid $priceColor;
+      border: 2px solid $whiteColor;
     }
     // &_bd {
     //   color: $textColor;

@@ -108,10 +108,10 @@ $searchShadow: 0px 25px 75px 0px rgba(6, 7, 20, 0.1);
 // white-space: nowrap; //запрет на перенос текста
 
 // Как при помощи CSS обрезать длинный текст. Решение для многострочного текста
-// overflow: hidden;
-// text-overflow: ellipsis;
-// display: -webkit-box;
-// -webkit-box-orient: vertical;
-// -webkit-line-clamp: 3; // Количество строк
-// line-height: 20px; // Для поддержки не-вебкит-браузеров, высота одной строки
-// max-height: 60px; // Для поддержки не-вебкит-браузеров, высота строки * количество строк
+  //   /*! autoprefixer: off */
+  //   display: -webkit-box;
+  //   -webkit-line-clamp: 2; // количество строк
+  //   -webkit-box-orient: vertical;
+  //   overflow: hidden;
+  // }
+  // /*! autoprefixer: on */
