@@ -906,6 +906,12 @@ fieldset {
   z-index: 1;
 }
 
+.auctions-carousel__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .auctions-carousel__title-price {
   display: flex;
   justify-content: space-between;
@@ -919,6 +925,12 @@ fieldset {
   max-width: 60%;
   line-height: 25px;
   letter-spacing: 0.2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-height: 20px;
+  max-height: 60px;
 }
 
 @media (max-width: 767px) {
@@ -965,6 +977,18 @@ fieldset {
 
 .bidding-people__avatars {
   display: flex;
+}
+
+.bidding-people__avatars img {
+  width: 32px;
+  margin: 0 -5px;
+}
+
+.bidding-people__text {
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
 }
 
 .bidding-people__counter {
@@ -1033,6 +1057,7 @@ fieldset {
 
 .hottest-sale-offers-carous {
   display: flex;
+  column-gap: 24px;
 }
 
 .hottest-sale-offers-carous .slick-track {
@@ -1042,11 +1067,6 @@ fieldset {
 .hottest-sale-offers-carous__item {
   width: 100%;
   margin-bottom: 64px;
-  margin-right: 24px;
-}
-
-.hottest-sale-offers-carous__item:last-child {
-  margin-right: 0;
 }
 
 .hottest-sale-offers-carous__item_opacity {
@@ -1089,6 +1109,12 @@ fieldset {
 
 .hottest-sale-offers-carous__title {
   margin: 22px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-height: 20px;
+  max-height: 40px;
 }
 
 .top-nft__item {
@@ -1105,7 +1131,6 @@ fieldset {
 }
 
 .top-nft__picture img {
-  max-width: 120px;
   border-radius: 20px;
 }
 
@@ -1139,8 +1164,19 @@ fieldset {
 .get-started-creating__title {
   width: 75%;
   color: white;
-  font-size: 24px;
   font-weight: 800;
+}
+
+@media (max-width: 767px) {
+  .get-started-creating__title {
+    font-size: calc(16px + 13.6 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .get-started-creating__title {
+    font-size: calc(16px + 8 * (100vw  / 1920));
+  }
 }
 
 .get-started-creating__text {
@@ -1148,9 +1184,20 @@ fieldset {
   margin-top: 9px;
   margin-bottom: 47px;
   color: #7780a1;
-  font-size: 14px;
   font-weight: 400;
   font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 767px) {
+  .get-started-creating__text {
+    font-size: calc(12px + 3.4 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .get-started-creating__text {
+    font-size: calc(12px + 2 * (100vw  / 1920));
+  }
 }
 
 .habitant-tristique-scelerisque {
@@ -1855,6 +1902,9 @@ fieldset {
   .user {
     min-width: auto;
   }
+  .hottest-sale-offers {
+    padding: 30px;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -1888,6 +1938,13 @@ fieldset {
   }
   .total-block__content_width {
     width: 100%;
+  }
+  .hottest-sale-offers-carous_pa {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hottest-sale-offers-carous_pa .hottest-sale-offers-carous__item {
+    width: 23.33%;
   }
   .join-now-col {
     padding-top: 70px;
@@ -1980,6 +2037,9 @@ fieldset {
   }
   .detail-numb {
     column-gap: 65px;
+  }
+  .hottest-sale-offers-carous_pa .hottest-sale-offers-carous__item {
+    width: 29%;
   }
   .join-now-col {
     padding-left: 25px;
@@ -2089,6 +2149,9 @@ fieldset {
   .detail-numb__item {
     width: 100%;
   }
+  .hottest-sale-offers-carous_pa .hottest-sale-offers-carous__item {
+    width: 39%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -2097,6 +2160,12 @@ fieldset {
   }
   .common-btn__link {
     padding: 12px 15px;
+  }
+  .hottest-sale-offers-carous {
+    column-gap: 20px;
+  }
+  .hottest-sale-offers-carous_pa .hottest-sale-offers-carous__item {
+    width: 46%;
   }
   .user {
     display: none;

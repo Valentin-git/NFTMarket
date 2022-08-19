@@ -98,6 +98,11 @@
       
     }
   }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   &__title-price {
     display: flex;
     justify-content: space-between;
@@ -112,6 +117,14 @@
     letter-spacing: 0.2px;
     // font-size: 20px;
     @include adaptiv(20, 14);
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; 
+    line-height: 20px; 
+    max-height: 60px; 
   }
   &__price {
     color: $priceColor;
@@ -141,6 +154,16 @@
   font-family: 'Inter', sans-serif;
   &__avatars {
     display: flex;
+    img {
+      width: 32px;
+      margin: 0 -5px;
+    }
+  }
+  &__text {
+    line-height: 150%;
+    letter-spacing: 0.2px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
   }
   &__counter {
     display: flex;

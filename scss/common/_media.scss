@@ -30,7 +30,9 @@
   .user {
     min-width: auto;
   }
-  
+  .hottest-sale-offers {
+    padding: 30px;
+  }
 }
 //------------------------------- MAX-WIDTH 1199.98 ---------------------//
 @media (max-width: 1199.98px) {
@@ -75,6 +77,15 @@
     &__content {
       &_width {
         width: 100%;
+      }
+    }
+  }
+  .hottest-sale-offers-carous {
+    &_pa {
+      flex-wrap: wrap;
+      justify-content: center;
+      .hottest-sale-offers-carous__item {
+        width: 23.33%;
       }
     }
   }
@@ -193,6 +204,13 @@
   }
   .detail-numb {
     column-gap: 65px;
+  }
+  .hottest-sale-offers-carous {
+    &_pa {
+      .hottest-sale-offers-carous__item {
+        width: 29%;
+      }
+    }
   }
   .join-now-col {
     padding-left: 25px;
@@ -314,6 +332,13 @@
       width: 100%;
     }
   }
+  .hottest-sale-offers-carous {
+    &_pa {
+      .hottest-sale-offers-carous__item {
+        width: 39%;
+      }
+    }
+  }
 }
 //------------------------------- MAX-WIDTH 500 ---------------------//
 @media (max-width: 500px) {
@@ -325,6 +350,14 @@
   .common-btn {
     &__link {
       padding: 12px 15px;
+    }
+  }
+  .hottest-sale-offers-carous {
+    column-gap: 20px;
+    &_pa {
+      .hottest-sale-offers-carous__item {
+        width: 46%;
+      }
     }
   }
   .user {

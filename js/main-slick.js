@@ -58,20 +58,20 @@ $('.pictur-mini-carous').slick({
   ]
 });
 
-$('.hottest-sale-offers-carous-min').slick({
-  // centerMode: true,
-  // variableWidth: true,
-  // centerPadding: '150px',
-  slidesToShow: 1,
-  variableWidth: true,
-  infinite: true,
-  speed: 300,
-  easing: 'ease',
-  // arrows: true,
-  // dots: true,
-  autoplay: false,
+// $('.hottest-sale-offers-carous-min').slick({
+//   // centerMode: true,
+//   // variableWidth: true,
+//   // centerPadding: '170px',
+//   slidesToShow: 2,
+//   // variableWidth: true,
+//   infinite: true,
+//   speed: 300,
+//   easing: 'ease',
+//   // arrows: true,
+//   // dots: true,
+//   autoplay: true,
 
-});
+// });
 
 $('.auctions-carousel').slick({
   centerMode: true,
@@ -121,3 +121,6 @@ $('.auctions-carousel').slick({
     }
   ]
 });
+
+
+

@@ -33,6 +33,7 @@
 }
 .hottest-sale-offers-carous {
   display: flex;
+  column-gap: 24px;
   .slick-track {
     display: flex;
   }
@@ -40,14 +41,18 @@
     // max-width: 212px;
     // min-width: 205px;
     width: 100%;
+    // min-width: 100%;
     margin-bottom: 64px;
-    margin-right: 24px;
-    &:last-child {
-      margin-right: 0;
-    }
+    // margin-right: 24px;
+    // &:last-child {
+    //   margin-right: 0;
+    // }
     &_opacity {
       opacity: .1;
     }
+  }
+  &__content {
+    // width: 48%;
   }
   &__picture {
     position: relative;
@@ -86,6 +91,13 @@
   }
   &__title {
     margin: 22px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; // Количество строк
+    line-height: 20px; // Для поддержки не-вебкит-браузеров, высота одной строки
+    max-height: 40px;
   }
  .slick-list {
   // padding-right: 24px !important;
@@ -103,7 +115,7 @@
   &__picture {
     margin-right: 16px;
     img {
-      max-width: 120px;
+      // max-width: 120px;
       border-radius: 20px;
     }
   }
@@ -145,7 +157,8 @@
   &__title {
     width: 75%;
     color: $whiteColor;
-    font-size: 24px;
+    // font-size: 24px;
+    @include adaptiv(24, 16);
     font-weight: 800;
   }
   &__text {
@@ -153,7 +166,8 @@
     margin-top: 9px;
     margin-bottom: 47px;
     color: $textColor;
-    font-size: 14px;
+    // font-size: 14px;
+    @include adaptiv(14, 12);
     font-weight: 400;
     font-family: 'Inter', sans-serif;
   }
