@@ -66,6 +66,11 @@
   .menu-nav {
     display: none;
   }
+  .auctions-carousel {
+    &__item {
+      padding: 15px;
+    }
+  }
   // sapien
   .sapien {
     &__inner {
@@ -197,6 +202,9 @@
       margin-right: 60px;
     }
   }
+  .hottest-offers-nft {
+    margin: 100px 0;
+  }
   .auctions-carousel {
     &__item {
       padding: 12px;
@@ -205,11 +213,22 @@
   .detail-numb {
     column-gap: 65px;
   }
+  .habitant-tristique-scelerisque {
+    margin-bottom: 100px;
+  }
+  .popular-auctions {
+    padding-bottom: 50px;
+  }
   .hottest-sale-offers-carous {
     &_pa {
       .hottest-sale-offers-carous__item {
         width: 29%;
       }
+    }
+  }
+  .hottest-offers-btn {
+    &__link {
+      padding: rem(10) rem(16);
     }
   }
   .join-now-col {
@@ -267,6 +286,16 @@
       &_width-jn {
         width: 60%;
       }
+    }
+  }
+  .total-time-price {
+    &__price {
+      padding: 8px 8px;
+    }
+  }
+  .auctions-carousel {
+    &__price {
+      padding: 8px 8px;
     }
   }
   .user {
@@ -332,6 +361,9 @@
       width: 100%;
     }
   }
+  .popular-auctions {
+    padding-bottom: 20px;
+  }
   .hottest-sale-offers-carous {
     &_pa {
       .hottest-sale-offers-carous__item {
@@ -349,7 +381,7 @@
   }
   .common-btn {
     &__link {
-      padding: 12px 15px;
+      // padding: 12px 15px;
     }
   }
   .hottest-sale-offers-carous {
@@ -373,9 +405,26 @@
   .join-now-col {
     padding-right: 25px;
   }
+  .popular-auctions {
+    &__title {
+      text-align: center;
+    }
+  }
+  .popular-auctions-menu {
+    margin-bottom: 50px;
+    gap: 9px;
+    &__item {
+      padding: 5px;
+    }
+  }
 }
 //------------------------------- MAX-WIDTH 418 ---------------------//
 @media (max-width: 418px) {
+  .common-btn {
+    &__link {
+      padding: rem(8) rem(11);
+    }
+  }
   .popular-auctions-menu {
     flex-wrap: wrap;
   }

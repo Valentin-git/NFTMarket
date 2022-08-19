@@ -307,16 +307,38 @@ fieldset {
   display: flex;
   align-items: center;
   color: #060714;
-  font-size: 14px;
   font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 767px) {
+  .total-time-price__time {
+    font-size: calc(11px + 5.1 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .total-time-price__time {
+    font-size: calc(11px + 3 * (100vw  / 1920));
+  }
 }
 
 .total-time-price__price {
   color: #2a27c9;
   background: rgba(42, 39, 201, 0.1);
   padding: 6px 10px;
-  font-size: 13px;
   border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  .total-time-price__price {
+    font-size: calc(11px + 3.4 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .total-time-price__price {
+    font-size: calc(11px + 2 * (100vw  / 1920));
+  }
 }
 
 .total-bidding-heart {
@@ -327,8 +349,19 @@ fieldset {
 
 .total-bidding-heart__text {
   color: #7780a1;
-  font-size: 14px;
   font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 767px) {
+  .total-bidding-heart__text {
+    font-size: calc(10px + 6.8 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .total-bidding-heart__text {
+    font-size: calc(10px + 4 * (100vw  / 1920));
+  }
 }
 
 .hottest-offers-btn {
@@ -351,9 +384,20 @@ fieldset {
   color: #7780a1;
   width: 100%;
   padding: 16px 0;
-  font-size: 16px;
   border: 2px solid #7780a1;
   border-radius: 12px;
+}
+
+@media (max-width: 767px) {
+  .hottest-offers-btn__link {
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .hottest-offers-btn__link {
+    font-size: calc(14px + 2 * (100vw  / 1920));
+  }
 }
 
 .hottest-offers-btn__link_pad {
@@ -952,6 +996,18 @@ fieldset {
   border-radius: 4px;
 }
 
+@media (max-width: 767px) {
+  .auctions-carousel__price {
+    font-size: calc(10px + 10.2 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .auctions-carousel__price {
+    font-size: calc(10px + 6 * (100vw  / 1920));
+  }
+}
+
 .auctions-carousel__time {
   display: flex;
   align-items: center;
@@ -1117,6 +1173,18 @@ fieldset {
   max-height: 40px;
 }
 
+@media (max-width: 767px) {
+  .hottest-sale-offers-carous__title {
+    font-size: calc(13px + 5.1 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .hottest-sale-offers-carous__title {
+    font-size: calc(13px + 3 * (100vw  / 1920));
+  }
+}
+
 .top-nft__item {
   display: flex;
   margin-bottom: 16px;
@@ -1262,13 +1330,13 @@ fieldset {
 
 @media (max-width: 767px) {
   .popular-auctions-menu__item {
-    font-size: calc(13px + 5.1 * ((100vw - 320px) / 1920));
+    font-size: calc(12px + 6.8 * ((100vw - 320px) / 1920));
   }
 }
 
 @media (min-width: 767px) {
   .popular-auctions-menu__item {
-    font-size: calc(13px + 3 * (100vw  / 1920));
+    font-size: calc(12px + 4 * (100vw  / 1920));
   }
 }
 
@@ -1932,6 +2000,9 @@ fieldset {
   .menu-nav {
     display: none;
   }
+  .auctions-carousel__item {
+    padding: 15px;
+  }
   .sapien__inner {
     flex-direction: column-reverse;
     flex-wrap: wrap;
@@ -2032,14 +2103,26 @@ fieldset {
   .brands__item {
     margin-right: 60px;
   }
+  .hottest-offers-nft {
+    margin: 100px 0;
+  }
   .auctions-carousel__item {
     padding: 12px;
   }
   .detail-numb {
     column-gap: 65px;
   }
+  .habitant-tristique-scelerisque {
+    margin-bottom: 100px;
+  }
+  .popular-auctions {
+    padding-bottom: 50px;
+  }
   .hottest-sale-offers-carous_pa .hottest-sale-offers-carous__item {
     width: 29%;
+  }
+  .hottest-offers-btn__link {
+    padding: 0.625rem 1rem;
   }
   .join-now-col {
     padding-left: 25px;
@@ -2093,6 +2176,12 @@ fieldset {
 @media (max-width: 646px) {
   .total-block__content_width-jn {
     width: 60%;
+  }
+  .total-time-price__price {
+    padding: 8px 8px;
+  }
+  .auctions-carousel__price {
+    padding: 8px 8px;
   }
   .user_pos-1 {
     right: -85px;
@@ -2149,6 +2238,9 @@ fieldset {
   .detail-numb__item {
     width: 100%;
   }
+  .popular-auctions {
+    padding-bottom: 20px;
+  }
   .hottest-sale-offers-carous_pa .hottest-sale-offers-carous__item {
     width: 39%;
   }
@@ -2157,9 +2249,6 @@ fieldset {
 @media (max-width: 500px) {
   .auctions-carousel__item {
     padding: 10px;
-  }
-  .common-btn__link {
-    padding: 12px 15px;
   }
   .hottest-sale-offers-carous {
     column-gap: 20px;
@@ -2176,9 +2265,22 @@ fieldset {
   .join-now-col {
     padding-right: 25px;
   }
+  .popular-auctions__title {
+    text-align: center;
+  }
+  .popular-auctions-menu {
+    margin-bottom: 50px;
+    gap: 9px;
+  }
+  .popular-auctions-menu__item {
+    padding: 5px;
+  }
 }
 
 @media (max-width: 418px) {
+  .common-btn__link {
+    padding: 0.5rem 0.6875rem;
+  }
   .popular-auctions-menu {
     flex-wrap: wrap;
   }

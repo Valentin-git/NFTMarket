@@ -181,14 +181,16 @@ fieldset {
     display: flex;
     align-items: center;
     color: $titleColor;
-    font-size: 14px;
+    // font-size: 14px;
+    @include adaptiv(14, 11);
     font-family: 'Inter', sans-serif;
   }
   &__price {
     color: #2a27c9;
     background: rgba(42, 39, 201, 0.1);
     padding: 6px 10px;
-    font-size: 13px;
+    // font-size: 13px;
+    @include adaptiv(13, 11);
     border-radius: 4px
   }
 } 
@@ -198,7 +200,8 @@ fieldset {
   justify-content: space-between;
   &__text {
     color: $textColor;
-    font-size: 14px;
+    // font-size: 14px;
+    @include adaptiv(14, 10);
     font-family: 'Inter', sans-serif;
   }
 }
@@ -220,7 +223,8 @@ fieldset {
     color: $textColor;
     width: 100%;
     padding: 16px 0;
-    font-size: 16px;
+    // font-size: 16px;
+    @include adaptiv(16, 14);
     border: 2px solid $textColor;
     border-radius: 12px;
     &_pad {
