@@ -34,6 +34,16 @@
 .hottest-sale-offers-carous {
   display: flex;
   column-gap: 24px;
+  &_pa {
+    height: 100%;
+    width: 100%;
+    .hottest-sale-offers-carous__item {
+      width: 16.666%;
+    }
+    .hottest-sale-offers-carous__picture img {
+      min-width: 100%;
+    }
+  }
   .slick-track {
     display: flex;
   }

@@ -960,9 +960,13 @@ fieldset {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 24px;
-  margin-bottom: 26px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   min-height: 75px;
+}
+
+.auctions-carousel__title-price_height {
+  min-height: auto;
 }
 
 .auctions-carousel__title {
@@ -1023,7 +1027,7 @@ fieldset {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid;
+  border-top: 1px solid #E2E2ED;
   padding-top: 20px;
   color: #7780a1;
   font-size: 14px;
@@ -1114,6 +1118,19 @@ fieldset {
   display: flex;
   column-gap: 24px;
   /*! autoprefixer: on */
+}
+
+.hottest-sale-offers-carous_pa {
+  height: 100%;
+  width: 100%;
+}
+
+.hottest-sale-offers-carous_pa .hottest-sale-offers-carous__item {
+  width: 16.666%;
+}
+
+.hottest-sale-offers-carous_pa .hottest-sale-offers-carous__picture img {
+  min-width: 100%;
 }
 
 .hottest-sale-offers-carous .slick-track {
@@ -1315,7 +1332,9 @@ fieldset {
 
 .popular-auctions-menu {
   display: flex;
-  gap: 16px;
+  justify-content: center;
+  column-gap: 16px;
+  row-gap: 15px;
   margin-bottom: 72px;
 }
 
@@ -1337,6 +1356,13 @@ fieldset {
   .popular-auctions-menu__item {
     font-size: calc(12px + 4 * (100vw  / 1920));
   }
+}
+
+.popular-auctions-menu__item_active {
+  background: linear-gradient(90deg, #4745d0 0%, #2a27c9 100%);
+  color: white;
+  box-shadow: -4px -4px 4px 0px rgba(0, 0, 0, 0.1) inset;
+  border: 2px solid white;
 }
 
 .hottest-sale-offers-carous__picture_blur-pop-1::after {
@@ -2102,6 +2128,12 @@ fieldset {
   .brands__item {
     margin-right: 60px;
   }
+  .auctions-carousel__content_pad .auctions-carousel__time {
+    padding-bottom: 15px;
+  }
+  .auctions-carousel__content_pad .bidding-people {
+    padding-top: 10px;
+  }
   .hottest-offers-nft {
     margin: 100px 0;
   }
@@ -2269,10 +2301,7 @@ fieldset {
   }
   .popular-auctions-menu {
     margin-bottom: 50px;
-    gap: 9px;
-  }
-  .popular-auctions-menu__item {
-    padding: 5px;
+    column-gap: 9px;
   }
 }
 

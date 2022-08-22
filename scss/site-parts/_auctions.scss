@@ -107,9 +107,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 24px;
-    margin-bottom: 26px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     min-height: 75px;
+    &_height {
+      min-height: auto;
+    }
   }
   &__title {
     max-width: 60%;
@@ -147,7 +150,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid;
+  border-top: 1px solid #E2E2ED;
   padding-top: 20px;
   color: $textColor;
   font-size: 14px;

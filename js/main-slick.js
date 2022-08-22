@@ -77,7 +77,7 @@ $('.auctions-carousel').slick({
   centerMode: true,
   // variableWidth: true,
   centerPadding: '150px',
-  slidesToShow: 4,
+  slidesToShow: 3,
   // variableWidth: true,
   infinite: true,
   speed: 300,
@@ -86,6 +86,18 @@ $('.auctions-carousel').slick({
   // dots: true,
   // autoplay: true,
   responsive: [
+    {
+      breakpoint: 3000,
+      settings: {
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 2000,
+      settings: {
+        slidesToShow: 4
+      }
+    },
     {
       breakpoint: 1399.99,
       settings: {

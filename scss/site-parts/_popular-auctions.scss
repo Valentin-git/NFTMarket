@@ -22,7 +22,9 @@
 }
 .popular-auctions-menu {
   display: flex;
-  gap: 16px;
+  justify-content: center;
+  column-gap: 16px;
+  row-gap: 15px;
   margin-bottom: 72px;
   &__item {
     padding: 8px;
@@ -32,6 +34,12 @@
     border: 2px solid #E2E2ED;
     border-radius: 8px;
     cursor: pointer;
+    &_active {
+      background: $gradientBtn;
+      color: $whiteColor;
+      box-shadow: $shadowBlackBtn;
+      border: 2px solid $whiteColor;
+    }
   }
 }
 .hottest-sale-offers-carous {
