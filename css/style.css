@@ -1212,10 +1212,27 @@ fieldset {
 
 .top-nft__picture {
   margin-right: 16px;
+  width: 33%;
 }
 
 .top-nft__picture img {
   border-radius: 20px;
+}
+
+.top-nft__content {
+  width: 65%;
+}
+
+@media (max-width: 767px) {
+  .top-nft__title {
+    font-size: calc(13px + 5.1 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .top-nft__title {
+    font-size: calc(13px + 3 * (100vw  / 1920));
+  }
 }
 
 .get-started-creating {

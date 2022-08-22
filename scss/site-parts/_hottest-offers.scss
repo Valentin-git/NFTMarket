@@ -125,13 +125,17 @@
   }
   &__picture {
     margin-right: 16px;
+    width: 33%;
     img {
       // max-width: 120px;
       border-radius: 20px;
     }
   }
   &__content {
-
+    width: 65%;
+  }
+  &__title {
+    @include adaptiv(16, 13);
   }
 }
 .get-started-creating {
