@@ -89,7 +89,15 @@ $('.auctions-carousel').slick({
     {
       breakpoint: 3000,
       settings: {
-        slidesToShow: 4
+        slidesToShow: 4,
+        centerPadding: '400px',
+      }
+    },
+    {
+      breakpoint: 2560,
+      settings: {
+        slidesToShow: 4,
+        centerPadding: '400px',
       }
     },
     {

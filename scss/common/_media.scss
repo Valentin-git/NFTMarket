@@ -119,12 +119,18 @@
   }
   .hottest-offers {
     flex-wrap: wrap;
+    row-gap: 24px;
     &__col {
       width: 100%;
       margin-right: 0;
       margin-bottom: 20px;
       display: flex;
       justify-content: center;
+      &_show {
+        min-height: 766px;
+        width: 447px;
+        margin: 0 auto;
+      }
     }
   }
   .hottest-sale-offers {

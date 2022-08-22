@@ -738,7 +738,7 @@ fieldset {
   height: 62px;
   position: absolute;
   bottom: 47px;
-  left: -1.375rem;
+  left: 15px;
 }
 
 .intro__subtitle {
@@ -1645,6 +1645,11 @@ fieldset {
 .pictur-mini-carous__picture {
   position: relative;
   margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.pictur-mini-carous__picture:hover::after {
+  background: 0;
 }
 
 .pictur-mini-carous__picture_blur-pic-0::after {
@@ -2067,6 +2072,7 @@ fieldset {
   }
   .hottest-offers {
     flex-wrap: wrap;
+    row-gap: 24px;
   }
   .hottest-offers__col {
     width: 100%;
@@ -2074,6 +2080,11 @@ fieldset {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
+  }
+  .hottest-offers__col_show {
+    min-height: 766px;
+    width: 447px;
+    margin: 0 auto;
   }
   .hottest-sale-offers {
     width: 447px;

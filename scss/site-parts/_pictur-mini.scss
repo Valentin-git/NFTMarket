@@ -16,6 +16,10 @@
   &__picture {
     position: relative;
     margin-bottom: 5px;
+    cursor: pointer;
+    &:hover::after  {
+      background: 0;
+    }
     &_blur-pic-0 {
       &::after {
         content: '';
