@@ -175,7 +175,7 @@
   }
   &__title {
     color: $titleColor;
-    width: 50%;
+    // width: 50%;
     // width: 837px;
     // font-size: 120px;
     @include adaptiv(120, 40);
@@ -183,28 +183,41 @@
     text-align: center;
   }
   &__new {
-    position: relative;
-    &::after {
-      content: '';
-      background: url(../img/header/semicircle.svg) no-repeat;
-      width: 38px;
-      height: 87px;
-      position: absolute;
-      top: 35px;
-      right: -49px;
+    display: flex;
+    align-items: center;
+    img {
+      margin-left: 10px;
     }
+    // position: relative;
+    // &::after {
+    //   content: '';
+    //   background: url(../img/header/semicircle.svg) no-repeat;
+    //   width: 38px;
+    //   height: 87px;
+    //   position: absolute;
+    //   top: 35px;
+    //   right: -49px;
+    // }
   }
   &__exp {
-    &::before {
-      content: '';
-      background: url(../img/header/semicircle-two.svg) no-repeat;
-      width: 62px;
-      height: 62px;
-      position: absolute;
-      bottom: 47px;
-      // left: -22px;
-      left: 15px;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    margin-left: 58px;
+    line-height: 1;
+    img {
+      margin-right: 15px;
     }
+    // &::before {
+    //   content: '';
+    //   background: url(../img/header/semicircle-two.svg) no-repeat;
+    //   width: 62px;
+    //   height: 62px;
+    //   position: absolute;
+    //   bottom: 47px;
+    //   // left: -22px;
+    //   left: 15px;
+    // }
   }
   &__subtitle {
     color: $textColor;
