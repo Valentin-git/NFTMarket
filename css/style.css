@@ -774,6 +774,7 @@ fieldset {
 }
 
 .search__input {
+  min-width: 233px;
   font-weight: 400;
   font-family: 'Inter', sans-serif;
   border: 0;
@@ -781,13 +782,13 @@ fieldset {
 
 @media (max-width: 767px) {
   .search__input {
-    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1920));
+    font-size: calc(12px + 6.8 * ((100vw - 320px) / 1920));
   }
 }
 
 @media (min-width: 767px) {
   .search__input {
-    font-size: calc(14px + 2 * (100vw  / 1920));
+    font-size: calc(12px + 4 * (100vw  / 1920));
   }
 }
 
@@ -808,7 +809,7 @@ fieldset {
   border-left: 1px solid #1F2A47;
   padding-left: 16px;
   padding-right: 46px;
-  margin-left: 109px;
+  margin-left: 97px;
   margin-right: 48px;
 }
 
@@ -2031,6 +2032,9 @@ fieldset {
   .intro__exp img {
     width: 40px;
   }
+  .menu {
+    column-gap: 41px;
+  }
   .user_pos-1 {
     right: 125px;
   }
@@ -2283,6 +2287,9 @@ fieldset {
   .intro__new img {
     width: 17px;
     margin-left: 6px;
+  }
+  .intro__exp {
+    margin-left: 25px;
   }
   .intro__exp img {
     width: 27px;

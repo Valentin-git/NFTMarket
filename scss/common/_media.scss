@@ -60,6 +60,9 @@
       }
      }
   }
+  .menu {
+    column-gap: 41px;
+  }
   .user {
     &_pos-1 {
       right: 125px;
@@ -387,6 +390,7 @@
       }
     }
     &__exp {
+      margin-left: 25px;
       img {
        width: 27px;
        margin-right: 8px;
