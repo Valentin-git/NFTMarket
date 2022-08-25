@@ -379,6 +379,11 @@ fieldset {
   border: 0;
 }
 
+.hottest-offers-btn_bg .hottest-offers-btn__link:hover {
+  border: 0;
+  background: linear-gradient(90deg, #2a27c9 100%, #4745d0 0%);
+}
+
 .hottest-offers-btn__link {
   color: #7780a1;
   width: 100%;
@@ -401,6 +406,13 @@ fieldset {
 
 .hottest-offers-btn__link_pad {
   padding: 16px 24px;
+}
+
+.hottest-offers-btn__link:hover {
+  background: linear-gradient(90deg, #4745d0 0%, #2a27c9 100%);
+  color: white;
+  box-shadow: 4px 4px 4px 0px rgba(255, 255, 255, 0.1) inset;
+  border: 2px solid white;
 }
 
 ._icon-heart:before {
@@ -806,7 +818,7 @@ fieldset {
   font-weight: 400;
   font-family: 'Inter', sans-serif;
   border: 1px solid white;
-  border-left: 1px solid #1F2A47;
+  border-left: 1px solid #bbc0d0;
   padding-left: 16px;
   padding-right: 46px;
   margin-left: 97px;
@@ -1029,6 +1041,7 @@ fieldset {
   color: #7780a1;
   font-size: 14px;
   font-family: 'Inter', sans-serif;
+  /*! autoprefixer: on */
 }
 
 .bidding-people__avatars {
@@ -1041,10 +1054,27 @@ fieldset {
 }
 
 .bidding-people__text {
+  padding-left: 10px;
   line-height: 150%;
   letter-spacing: 0.2px;
-  font-size: 14px;
   font-family: 'Inter', sans-serif;
+  /*! autoprefixer: off */
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .bidding-people__text {
+    font-size: calc(10px + 6.8 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .bidding-people__text {
+    font-size: calc(10px + 4 * (100vw  / 1920));
+  }
 }
 
 .bidding-people__counter {

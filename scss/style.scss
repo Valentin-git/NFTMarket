@@ -217,6 +217,10 @@ fieldset {
       color: $whiteColor;
       box-shadow: $shadowWhiteBtn;
       border: 0;
+      &:hover {
+        border: 0;
+        background: linear-gradient(90deg, rgba(42,39,201,1) 100%, rgba(71,69,208,1) 0%);
+      }
     }
   }
   &__link {
@@ -229,6 +233,12 @@ fieldset {
     border-radius: 12px;
     &_pad {
       padding: 16px 24px;
+    }
+    &:hover {
+      background: $gradientBtn;
+      color: $whiteColor;
+      box-shadow: $shadowWhiteBtn;
+      border: 2px solid $whiteColor;
     }
   }
 }

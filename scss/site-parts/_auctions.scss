@@ -163,11 +163,18 @@
     }
   }
   &__text {
+    padding-left: 10px;
     line-height: 150%;
     letter-spacing: 0.2px;
-    font-size: 14px;
-    font-family: 'Inter', sans-serif;
+    // font-size: 14px;
+    @include adaptiv(14, 10);
+    font-family: 'Inter', sans-serif;/*! autoprefixer: off */
+    display: -webkit-box;
+    -webkit-line-clamp: 1; // количество строк
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
+  /*! autoprefixer: on */
   &__counter {
     display: flex;
     align-items: center;
