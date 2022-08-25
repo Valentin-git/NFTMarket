@@ -1,11 +1,10 @@
 .hottest-offers-nft {
-  margin: 150px 0;
+  margin: rem(150) 0;
 }
 .hottest-offers {
   display: flex;
   &__col {
-    margin-right: 24px;
-    // width: 448px;
+    margin-right: rem(24);
     width: 33.333%;
     overflow: hidden;
     &:last-child {
@@ -17,23 +16,21 @@
   }
 }
 .hottest-sale-offers {
-  padding: 40px;
+  padding: rem(40);
   min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   border: 1px solid #E2E2ED;
-  border-radius: 20px;
+  border-radius: rem(20);
   &__title {
-    // width: 99%;
-    margin-bottom: 53px;
-    // font-size: 32px;
+    margin-bottom: rem(53);
     @include adaptiv(32, 20);
   }
 }
 .hottest-sale-offers-carous {
   display: flex;
-  column-gap: 24px;
+  column-gap: rem(24);
   &_pa {
     height: 100%;
     width: 100%;
@@ -48,21 +45,11 @@
     display: flex;
   }
   &__item {
-    // max-width: 212px;
-    // min-width: 205px;
     width: 100%;
-    // min-width: 100%;
-    margin-bottom: 64px;
-    // margin-right: 24px;
-    // &:last-child {
-    //   margin-right: 0;
-    // }
+    margin-bottom: rem(64);
     &_opacity {
       opacity: .1;
     }
-  }
-  &__content {
-    // width: 48%;
   }
   &__picture {
     position: relative;
@@ -73,7 +60,7 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        top: 10px;
+        top: rem(10);
         left: 0;
         opacity: .2;
         filter:blur(25px);
@@ -86,17 +73,16 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        top: 10px;
+        top: rem(10);
         left: 0;
         opacity: .2;
         filter:blur(25px);
       }
     }
     img {
-      // min-height: 355px;
       position: relative;
       z-index: 1;
-      border-radius: 20px;
+      border-radius: rem(20);
     }
   }
   &__title {
@@ -110,25 +96,20 @@
     overflow: hidden;
   }
   /*! autoprefixer: on */
- .slick-list {
-  // padding-right: 24px !important;
-  // padding-left: 0 !important;
- }
 }
 .top-nft {
   &__item {
     display: flex;
-    margin-bottom: 16px;
+    margin-bottom: rem(16);
     &:last-child {
       margin-bottom: 0;
     }
   }
   &__picture {
-    margin-right: 16px;
+    margin-right: rem(16);
     width: 33%;
     img {
-      // max-width: 120px;
-      border-radius: 20px;
+      border-radius: rem(20);
     }
   }
   &__content {
@@ -143,7 +124,7 @@
   width: 100%;
   height: 100%;
   position: relative;
-  border-radius: 20px;
+  border-radius: rem(20);
   &::before {
     content: "";
     background: url(../img/hottest-offers/fingers.png) no-repeat;
@@ -152,36 +133,26 @@
     height: 100%;
     display: flex;
     position: absolute;
-    bottom: 80px;
+    bottom: rem(80);
     left: 0;
   }
   &__content {
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 0 40px 40px 40px;
+    padding: 0 rem(40) rem(40) rem(40);
   }
-  // background: url(../img/hottest-offers/get-started-box.png) no-repeat;
-  // background-size: contain;
-  // width: 100%;
-  // height: 100%;
-  // padding: 40px;
-  // display: flex;
-  // align-items: end;
-  // border-radius: 20px;
   &__title {
     width: 75%;
     color: $whiteColor;
-    // font-size: 24px;
     @include adaptiv(24, 16);
     font-weight: 800;
   }
   &__text {
     width: 75%;
-    margin-top: 9px;
-    margin-bottom: 47px;
+    margin-top: rem(9);
+    margin-bottom: rem(47);
     color: $textColor;
-    // font-size: 14px;
     @include adaptiv(14, 12);
     font-weight: 400;
     font-family: 'Inter', sans-serif;

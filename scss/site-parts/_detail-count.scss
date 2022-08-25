@@ -1,12 +1,12 @@
 .detail-count {
-  padding: 100px 0;
+  padding: rem(100) 0;
 }
 .detail-numb {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 103px;
-  row-gap: 35px;
+  column-gap: rem(103);
+  row-gap: rem(35);
   flex-wrap: wrap;
   &__item {
     display: flex;
@@ -15,7 +15,7 @@
   }
   &__icon {
     display: inherit;
-    font-size: 32px;
+    font-size: rem(32);
   }
   &__numb {
     color: $titleColor;

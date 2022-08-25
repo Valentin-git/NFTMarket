@@ -5,14 +5,7 @@
 @import 'common/variable';
 @import 'common/mixins';
 
-
-
-
-
-
 body {
-  // font-family: 'Inter', sans-serif;
-  // font-size: $fontSize;
   font-size: rem(16);
   font-family: 'Sora', sans-serif;
 }
@@ -27,7 +20,6 @@ button {
 fieldset {
   border: 0;
 }
-// прижать футер
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -56,18 +48,14 @@ fieldset {
   }
 }
 
-// [class*="container"]
 .container {
   max-width: $maxWidthContainer;
-  // max-width: 1392px;
   margin: 0 auto;
-  // padding: 0 1.5rem;
   padding: 0 $containerPadding;
 }
 
 .container-fluid {
   max-width: 1833px;
-  // padding: 0 40px;
 }
 
 // burger---------------------------------------//
@@ -76,9 +64,8 @@ fieldset {
   @media (max-width: $tablet) {
     display: block;
     position: relative;
-    // width: 30px;
-    flex: 0 0 30px;
-    height: 18px;
+    flex: 0 0 rem(30);
+    height: rem(18);
     background: 0;
     cursor: pointer;
     z-index: 5;
@@ -90,7 +77,7 @@ fieldset {
       left: 0;
       position: absolute;
       width: 100%;
-      height: 2px;
+      height: rem(2);
       background: #000;
     } 
     &::before {
@@ -117,7 +104,6 @@ fieldset {
     }
   }
 }
-// <button type="button" class="icon-menu"></button>
 .common-btn {
   display: flex;
   flex: 0 0 auto;
@@ -142,23 +128,11 @@ fieldset {
     }
     &:hover {
       color: $whiteColor;
-      // padding: 16px 24px;
       background: $gradientBtn;
-      // box-shadow: $shadowBlackBtn;
       box-shadow: $shadowWhiteBtn;
       border: 2px solid $whiteColor;
+      transition: all .5s ease 0s;
     }
-    // &_bd {
-    //   color: $textColor;
-    //   border: 2px solid $textColor;
-    // }
-    // &_liner {
-    //   color: $whiteColor;
-    //   padding: 16px 24px;
-    //   background: $gradientBtn;
-    //   box-shadow: $shadowBlackBtn;
-    //   box-shadow: $shadowWhiteBtn;
-    // }
   }
 }
 // Check out the hottest Sale offers
@@ -167,31 +141,29 @@ fieldset {
   align-items: center;
   justify-content: space-between;
   &_mb {
-    margin: 9px 0;
+    margin: rem(9) 0;
   }
   &_divider {
-    padding-bottom: 12px;
-    margin-bottom: 12px;
+    padding-bottom: rem(12);
+    margin-bottom: rem(12);
     border-bottom: 1px solid #E2E2ED;
   }
   ._icon-time::before {
-    margin-right: 12px;
+    margin-right: rem(12);
   }
   &__time {
     display: flex;
     align-items: center;
     color: $titleColor;
-    // font-size: 14px;
     @include adaptiv(14, 11);
     font-family: 'Inter', sans-serif;
   }
   &__price {
     color: #2a27c9;
     background: rgba(42, 39, 201, 0.1);
-    padding: 6px 10px;
-    // font-size: 13px;
+    padding: rem(6) rem(10);
     @include adaptiv(13, 11);
-    border-radius: 4px
+    border-radius: rem(4);
   }
 } 
 .total-bidding-heart {
@@ -200,7 +172,6 @@ fieldset {
   justify-content: space-between;
   &__text {
     color: $textColor;
-    // font-size: 14px;
     @include adaptiv(14, 10);
     font-family: 'Inter', sans-serif;
   }
@@ -209,7 +180,7 @@ fieldset {
   display: flex;
   text-align: center;
   &_mt {
-    margin-top: 43px;
+    margin-top: rem(43);
   }
   &_bg {
     .hottest-offers-btn__link {
@@ -220,32 +191,33 @@ fieldset {
       &:hover {
         border: 0;
         background: linear-gradient(90deg, rgba(42,39,201,1) 100%, rgba(71,69,208,1) 0%);
+        transition: all .5s ease 0s;
       }
     }
   }
   &__link {
     color: $textColor;
     width: 100%;
-    padding: 16px 0;
-    // font-size: 16px;
+    padding: rem(16) 0;
     @include adaptiv(16, 14);
     border: 2px solid $textColor;
-    border-radius: 12px;
+    border-radius: rem(12);
     &_pad {
-      padding: 16px 24px;
+      padding: rem(16) rem(24);
     }
     &:hover {
       background: $gradientBtn;
       color: $whiteColor;
       box-shadow: $shadowWhiteBtn;
       border: 2px solid $whiteColor;
+      transition: all .5s ease 0s;
     }
   }
 }
 ._icon-heart {
   &:before {
     color: #dcdfe9;
-    font-size: 14px;
+    font-size: rem(14);
     cursor: pointer;
   }
   &_active:before {
@@ -259,65 +231,58 @@ fieldset {
 .total-block {
   &__content {
     width: 46%;
-    &_width {
-      // width: 100%;
-    }
     &_width-jn {
       width: 39%;
     }
-    // &_width {}
   }
   &__over {
     color: $serchColor;
-    font-size: 15px;
+    font-size: rem(15);
     font-weight: 500;
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
   }
   &__title {
-    margin-top: 9px;
-    margin-bottom: 27px;
+    margin-top: rem(9);
+    margin-bottom: rem(27);
     line-height: 1;
-    // font-size: 64px;
     @include adaptiv(64, 30);
     &_fz {
-      // font-size: 48px;
       @include adaptiv(48, 22);
     }
   }
   &__text {
     color: $textColor;
-    margin-bottom: 57px;
-    // font-size: 16px;
+    margin-bottom: rem(57);
     @include adaptiv(16, 13);
     font-weight: 400;
     font-family: 'Inter', sans-serif;
     &_jn {
-      margin-bottom: 24px;
+      margin-bottom: rem(24);
     }
   }
 }
 .common-icon-text {
   display: flex;
-  margin-bottom: 69px;
+  margin-bottom: rem(69);
   &__item {
-    margin-right: 62px;
+    margin-right: rem(62);
     &:last-child {
       margin-right: 0;
     }
   }
   &__icon:before {
     display: inherit;
-    font-size: 32px;
+    font-size: rem(32);
   }
   &__title {
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: rem(20);
+    font-size: rem(20);
     font-weight: 800;
   }
   &__text {
     color: $textColor;
-    font-size: 16px;
+    font-size: rem(16);
     font-weight: 400;
     font-family: 'Inter', sans-serif;
   }

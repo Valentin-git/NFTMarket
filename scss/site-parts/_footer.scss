@@ -1,5 +1,5 @@
 .footer {
-  min-height: 397px;
+  min-height: rem(397);
 }
 .footer-col {
   display: flex;
@@ -13,18 +13,18 @@
   }
   &__text {
     color: $textColor;
-    font-size: 16px;
+    font-size: rem(16);
     font-weight: 400;
     font-family: 'Inter', sans-serif;
   }
 }
 .footer-support {
   display: flex;
-  column-gap: 40px;
+  column-gap: rem(40);
   flex-wrap: wrap;
   &__link {
     color: $textColor;
-    font-size: 14px;
+    font-size: rem(14);
     font-weight: 400;
     font-family: 'Inter', sans-serif;
   }
@@ -32,20 +32,17 @@
 .footer-menu {
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: rem(9);
   margin-bottom: rem(37);
-  &__item {
-
-  }
   &__link {
     color: $titleColor;
-    font-size: 16px;
+    font-size: rem(16);
   }
 }
 .social {
   display: flex;
-  gap: 25px;
-  margin-top: 70px;
+  gap: rem(25);
+  margin-top: rem(70);
   &__link {
     color: $textColor;
   }
@@ -58,12 +55,11 @@
 .footer-news {
   position: relative;
   &__input {
-    // min-height: 52px;
     height: rem(52);
     width: 100%;
     color: $textColor;
     padding: 0 rem(32);
-    font-size: 16px;
+    font-size: rem(16);
     font-weight: 400;
     font-family: 'Inter', sans-serif;
 
@@ -80,7 +76,7 @@
     top: rem(15);
     color: $priceColor;
     background: 0;
-    font-size: 16px;
+    font-size: rem(16);
     font-weight: 800;
   }
 }
