@@ -152,10 +152,11 @@
     display: flex;
     img {
       width: rem(32);
-      margin: 0 rem(-5);
+      margin: 0 rem(-6);
     }
   }
   &__text {
+    display: none !important;
     padding-left: rem(10);
     line-height: 150%;
     letter-spacing: rem(0.2);
