@@ -45,6 +45,7 @@
   .hottest-sale-offers {
     padding: rem(30);
   }
+
 }
 //------------------------------- MAX-WIDTH 1199.98 ---------------------//
 @media (max-width: 1199.98px) {
@@ -74,6 +75,11 @@
   .footer-col {
     &__item {
       padding: rem(30);
+    }
+  }
+  .product {
+    &__inner {
+      padding: 24px;
     }
   }
 }
@@ -171,6 +177,18 @@
   .footer-col {
     &__item {
       padding: rem(25);
+    }
+  }
+  .product {
+    &__inner {
+      flex-direction: column;
+    }
+  }
+  .history {
+    &__schedule {
+      img {
+        width: 100%;
+      }
     }
   }
 }
