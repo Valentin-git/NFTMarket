@@ -123,6 +123,9 @@ fieldset {
     margin-right: rem(16);
     color: $textColor;
     border: 2px solid $textColor;
+    // transition: 
+    //   background .3s ease 0s,
+    //   color .3s ease 0s;
     &:last-child {
       margin-right: 0;
     }

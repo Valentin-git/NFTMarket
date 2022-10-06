@@ -30,7 +30,7 @@
     letter-spacing: 0.2px;
   }
   &__text {
-    color: #7780A1;
+    color: $textColor;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -53,7 +53,7 @@
     line-height: 1;
   }
   &__name {
-    color: #7780A1;
+    color: $textColor;
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
@@ -76,15 +76,33 @@
   flex-direction: column;
   gap: 16px;
   &__item {
-    border: 1px solid #E2E2ED;
-    padding: 19px;
-    border-radius: 50%;
-  }
-  &__link {
+    // border: 1px solid #E2E2ED;
+    // padding: 19px;
+    // border-radius: 50%;
   }
   ._icon-heart {
     &::before {
       color: #FB4539;
+    }
+  }
+  ._icon-share, ._icon-copy {
+    &::before {
+      color: $textColor;
+    }
+  }
+  &__link {
+    &::before {
+      background-color: $whiteColor;
+      border: 1px solid #E2E2ED;
+      padding: 19px;
+      border-radius: 50%;
+      transition: 
+        background-color .3s ease 0s,
+        color .3s ease 0s;
+    }
+    &:hover::before {
+      background-color: $priceColor;
+      color: $whiteColor;
     }
   }
 }
@@ -102,7 +120,7 @@
   }
   &__current {
     padding-bottom: 9px;
-    color: #7780A1;
+    color: $textColor;
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
@@ -127,7 +145,7 @@
     letter-spacing: 0.2px;
   }
   &__date {
-    color: #7780A1;
+    color: $textColor;
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
@@ -147,12 +165,15 @@
       letter-spacing: 0.2px;
       box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.1), inset 4px 4px 4px rgba(255, 255, 255, 0.1);
       border-radius: 12px;
+      &:hover {
+        background: $priceColor;
+      }
     }
   }
 }
 .history {
   &__text {
-    color: #7780A1;
+    color: $textColor;
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;

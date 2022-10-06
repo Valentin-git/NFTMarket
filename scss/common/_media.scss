@@ -45,7 +45,11 @@
   .hottest-sale-offers {
     padding: rem(30);
   }
-
+  .product {
+    &__inner {
+      align-items: flex-start;
+    }
+  }
 }
 //------------------------------- MAX-WIDTH 1199.98 ---------------------//
 @media (max-width: 1199.98px) {
@@ -80,6 +84,7 @@
   .product {
     &__inner {
       padding: 24px;
+      gap: 60px;
     }
   }
 }
@@ -182,6 +187,7 @@
   .product {
     &__inner {
       flex-direction: column;
+      align-items: center;
     }
   }
   .history {
@@ -351,6 +357,13 @@
   .footer-news {
     margin-top: rem(20);
   }
+  .social-menu {
+    &__link {
+      &::before {
+        padding: 14px;
+      }
+    }
+  }
 }
 @media (max-width: 646px) {
   .total-block {
@@ -458,6 +471,17 @@
         width: 39%;
       }
     }
+  }
+  .product {
+    &__inner {
+      gap: 30px;
+    }
+    .flex {
+      width: 100%;
+    }
+  }
+  .price-time {
+    padding: 25px;
   }
 }
 //------------------------------- MAX-WIDTH 500 ---------------------//

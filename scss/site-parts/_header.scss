@@ -141,6 +141,7 @@
     color: $textColor;
     font-size: rem(16);
     letter-spacing: rem(0.2);
+    transition: color .3s ease 0s;
     &:hover {
       color: $priceColor;
     }
