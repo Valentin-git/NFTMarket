@@ -523,6 +523,12 @@
     margin-bottom: rem(50);
     column-gap: rem(9);
   }
+  .price-time {
+    &__inner {
+      gap: 30px;
+      flex-direction: column;
+    }
+  }
 }
 //------------------------------- MAX-WIDTH 418 ---------------------//
 @media (max-width: 418px) {
@@ -546,5 +552,12 @@
   }
   .popular-auctions-menu {
     flex-wrap: wrap;
+  }
+  .creator {
+    justify-content: space-between;
+    gap: 15px;
+    &__item {
+      gap: 12px;
+    }
   }
 }

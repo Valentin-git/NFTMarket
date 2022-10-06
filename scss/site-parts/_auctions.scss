@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: rem(116);
   margin-bottom: rem(123);
   &__title {
     @include adaptiv(36, 30);

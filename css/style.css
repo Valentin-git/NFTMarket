@@ -550,7 +550,6 @@ fieldset {
   background-size: contain;
   width: 100%;
   height: 100%;
-  margin-bottom: 7.25rem;
   position: relative;
 }
 
@@ -875,6 +874,7 @@ fieldset {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 7.25rem;
   margin-bottom: 7.6875rem;
 }
 
@@ -1985,17 +1985,39 @@ fieldset {
   padding-bottom: 7px;
   color: #060714;
   font-weight: 600;
-  font-size: 40px;
   line-height: 125%;
   letter-spacing: 0.2px;
+}
+
+@media (max-width: 767px) {
+  .product__title {
+    font-size: calc(28px + 20.4 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .product__title {
+    font-size: calc(28px + 12 * (100vw  / 1920));
+  }
 }
 
 .product__text {
   color: #7780a1;
   font-weight: 400;
-  font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.2px;
+}
+
+@media (max-width: 767px) {
+  .product__text {
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .product__text {
+    font-size: calc(14px + 2 * (100vw  / 1920));
+  }
 }
 
 .creator {
@@ -2026,9 +2048,20 @@ fieldset {
 .creator__email {
   color: #060714;
   font-weight: 600;
-  font-size: 13px;
   line-height: 16px;
   letter-spacing: 0.2px;
+}
+
+@media (max-width: 767px) {
+  .creator__email {
+    font-size: calc(12px + 1.7 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .creator__email {
+    font-size: calc(12px + 1 * (100vw  / 1920));
+  }
 }
 
 .social-menu {
@@ -2085,9 +2118,20 @@ fieldset {
 .price-time__eth {
   color: #060714;
   font-weight: 600;
-  font-size: 56px;
   line-height: 100%;
   letter-spacing: 0.2px;
+}
+
+@media (max-width: 767px) {
+  .price-time__eth {
+    font-size: calc(35px + 35.7 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .price-time__eth {
+    font-size: calc(35px + 21 * (100vw  / 1920));
+  }
 }
 
 .price-time__eth span {
@@ -2098,9 +2142,20 @@ fieldset {
   padding-bottom: 6px;
   color: #060714;
   font-weight: 600;
-  font-size: 24px;
   line-height: 100%;
   letter-spacing: 0.2px;
+}
+
+@media (max-width: 767px) {
+  .price-time__time {
+    font-size: calc(18px + 10.2 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (min-width: 767px) {
+  .price-time__time {
+    font-size: calc(18px + 6 * (100vw  / 1920));
+  }
 }
 
 .price-time__date {
@@ -2621,6 +2676,10 @@ fieldset {
     margin-bottom: 3.125rem;
     column-gap: 0.5625rem;
   }
+  .price-time__inner {
+    gap: 30px;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 418px) {
@@ -2636,6 +2695,13 @@ fieldset {
   }
   .popular-auctions-menu {
     flex-wrap: wrap;
+  }
+  .creator {
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .creator__item {
+    gap: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */
