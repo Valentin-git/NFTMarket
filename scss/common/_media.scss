@@ -83,8 +83,8 @@
   }
   .product {
     &__inner {
-      padding: 24px;
-      gap: 60px;
+      padding: rem(24);
+      gap: rem(60);
     }
   }
 }
@@ -360,7 +360,7 @@
   .social-menu {
     &__link {
       &::before {
-        padding: 14px;
+        padding: rem(14);
       }
     }
   }
@@ -477,14 +477,14 @@
   }
   .product {
     &__inner {
-      gap: 30px;
+      gap: rem(30);
     }
     .flex {
       width: 100%;
     }
   }
   .price-time {
-    padding: 25px;
+    padding: rem(25);
   }
 }
 //------------------------------- MAX-WIDTH 500 ---------------------//
@@ -528,7 +528,7 @@
   }
   .price-time {
     &__inner {
-      gap: 30px;
+      gap: rem(30);
       flex-direction: column;
     }
   }
@@ -558,9 +558,9 @@
   }
   .creator {
     justify-content: space-between;
-    gap: 15px;
+    gap: rem(15);
     &__item {
-      gap: 12px;
+      gap: rem(12);
     }
   }
 }

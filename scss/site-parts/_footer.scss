@@ -27,6 +27,10 @@
     font-size: rem(14);
     font-weight: 400;
     font-family: 'Inter', sans-serif;
+    transition: color .3s ease 0s;
+    &:hover {
+      color: $priceColor;
+    }
   }
 }
 .footer-menu {
@@ -37,6 +41,10 @@
   &__link {
     color: $titleColor;
     font-size: rem(16);
+    transition: color .3s ease 0s;
+    &:hover {
+      color: $priceColor;
+    }
   }
 }
 .social {
@@ -73,10 +81,10 @@
   &__btn {
     position: absolute;
     right: rem(18);
-    top: rem(15);
+    top: rem(19);
     color: $priceColor;
     background: 0;
-    font-size: rem(16);
+    font-size: rem(19);
     font-weight: 800;
   }
 }

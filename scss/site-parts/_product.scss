@@ -1,13 +1,13 @@
 .product {
-  padding-bottom: 150px;
+  padding-bottom: rem(150);
   &__inner {
-    padding: 24px 94px 24px 24px;
+    padding: rem(24) rem(94) rem(24) rem(24);
     position: relative;
     display: flex;
     align-items: center;
-    gap: 94px;
-    border: 1px solid #E2E2ED;
-    border-radius: 20px;
+    gap: rem(94);
+    border: rem(1) solid #E2E2ED;
+    border-radius: rem(20);
   }
   &__item {
   }
@@ -16,16 +16,15 @@
   }
   &__picture {
     img {
-      border-radius: 20px;
+      border-radius: rem(20);
     }
   }
   &__content {
   }
   &__title {
-    padding-bottom: 7px;
+    padding-bottom: rem(7);
     color: #060714;
     font-weight: 600;
-    // font-size: 40px;
     @include adaptiv(40, 28);
     line-height: 125%;
     letter-spacing: 0.2px;
@@ -33,21 +32,20 @@
   &__text {
     color: $textColor;
     font-weight: 400;
-    // font-size: 16px;
     @include adaptiv(16, 14);
     line-height: 150%;
     letter-spacing: 0.2px;
   }
 }
 .creator {
-  padding-top: 30px;
-  padding-bottom: 40px;
+  padding-top: rem(30);
+  padding-bottom: rem(40);
   display: flex;
-  gap: 30px;
+  gap: rem(30);
   &__item {
     display: flex;
     align-items: center;
-    gap: 17px;
+    gap: rem(17);
   }
   &__avatar {
   }
@@ -57,32 +55,26 @@
   &__name {
     color: $textColor;
     font-weight: 400;
-    font-size: 14px;
+    font-size: rem(14);
     line-height: 150%;
     letter-spacing: 0.2px;
   }
   &__email {
     color: #060714;
     font-weight: 600;
-    // font-size: 13px;
     @include adaptiv(13, 12);
-    line-height: 16px;
+    line-height: rem(16);
     letter-spacing: 0.2px;
   }
 }
 .social-menu {
   position: absolute;
-  top: 77px;
-  right: -29px;
+  top: rem(77);
+  right: rem(-29);
 
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  &__item {
-    // border: 1px solid #E2E2ED;
-    // padding: 19px;
-    // border-radius: 50%;
-  }
+  gap: rem(16);
   ._icon-heart {
     &::before {
       color: #FB4539;
@@ -96,8 +88,8 @@
   &__link {
     &::before {
       background-color: $whiteColor;
-      border: 1px solid #E2E2ED;
-      padding: 19px;
+      border: rem(1) solid #E2E2ED;
+      padding: rem(19);
       border-radius: 50%;
       transition: 
         background-color .3s ease 0s,
@@ -109,42 +101,39 @@
     }
   }
 }
-
 .price-time {
-  padding: 32px 40px;
-  margin-bottom: 42px;
+  padding: rem(32) rem(40);
+  margin-bottom: rem(42);
   background: #F2F3F6;
-  border-radius: 20px;
+  border-radius: rem(20);
   &__inner {
     display: flex;
-    gap: 56px;
+    gap: rem(56);
   }
   &__item {
   }
   &__current {
-    padding-bottom: 9px;
+    padding-bottom: rem(9);
     color: $textColor;
     font-weight: 400;
-    font-size: 14px;
+    font-size: rem(14);
     line-height: 150%;
     letter-spacing: 0.2px;
   }
   &__eth {
     color: #060714;
     font-weight: 600;
-    // font-size: 56px;
     @include adaptiv(56, 35);
     line-height: 100%;
     letter-spacing: 0.2px;
     span {
-      font-size: 24px;
+      font-size: rem(24);
     }
   }
   &__time {
-    padding-bottom: 6px;
+    padding-bottom: rem(6);
     color: #060714;
     font-weight: 600;
-    // font-size: 24px;
     @include adaptiv(24, 18);
     line-height: 100%;
     letter-spacing: 0.2px;
@@ -152,24 +141,24 @@
   &__date {
     color: $textColor;
     font-weight: 400;
-    font-size: 14px;
+    font-size: rem(14);
     line-height: 150%;
     letter-spacing: 0.2px;
   }
   &__btn {
-    padding-top: 35px;
+    padding-top: rem(35);
     button {
       color: $whiteColor;
       background: $gradientBtn;
-      padding: 16px 0;
+      padding: rem(16) 0;
       width: 100%;
 
       font-weight: 600;
-      font-size: 16px;
-      line-height: 20px;
+      font-size: rem(16);
+      line-height: rem(20);
       letter-spacing: 0.2px;
       box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.1), inset 4px 4px 4px rgba(255, 255, 255, 0.1);
-      border-radius: 12px;
+      border-radius: rem(12);
       &:hover {
         background: $priceColor;
       }
@@ -180,16 +169,16 @@
   &__text {
     color: $textColor;
     font-weight: 400;
-    font-size: 14px;
+    font-size: rem(14);
     line-height: 150%;
     letter-spacing: 0.2px;
   }
   &__schedule {
-    padding-top: 13px;
+    padding-top: rem(13);
   }
 }
 .zoom {
-  border-radius: 20px;
+  border-radius: rem(20);
   & img:hover {
     opacity: 0;
   }
@@ -200,7 +189,6 @@
   }
   background-position: 50% 50%;
   position: relative;
-  // width: 685px;
   overflow: hidden;
   cursor: zoom-in;
 }
