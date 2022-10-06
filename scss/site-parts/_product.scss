@@ -188,3 +188,19 @@
     padding-top: 13px;
   }
 }
+.zoom {
+  border-radius: 20px;
+  & img:hover {
+    opacity: 0;
+  }
+  img {
+    transition: opacity .5s;
+    display: block;
+    width: 100%;
+  }
+  background-position: 50% 50%;
+  position: relative;
+  // width: 685px;
+  overflow: hidden;
+  cursor: zoom-in;
+}

@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NFTMarket</title>
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/slick-theme.css">
+  <!-- <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css"> -->
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="img/header/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,9 +56,12 @@
       <div class="container">
         <div class="product__inner">
           <div class="product__item">
-            <div class="product__picture">
-              <img src="./img/product/product.jpg" alt="product">
+            <div class="product__picture zoom" style='background-image: url("img/product/product1.jpg")' onmousemove='zoom(event)'>
+              <img src="./img/product/product1.jpg" alt="product">
             </div>
+            <!-- <div class="product__picture">
+              <img src="./img/product/product.jpg" alt="product">
+            </div> -->
           </div>
           <div class="product__item flex">
             <div class="product__content">
@@ -305,10 +308,11 @@
   </div><!--/.wrapper -->
 
   <script src="./js/jquery-3.6.0.min.js"></script>
-  <script src="./js/slick.min.js"></script>
-  <script src="./js/main-slick.js"></script>
+  <script src="./js/main-zoom.js"></script>
+  <!-- <script src="./js/slick.min.js"></script>
+  <script src="./js/main-slick.js"></script> -->
   <script src="./js/main.js"></script>
-  <script src="./js/main-counter.js"></script>
-  <script src="./js/main-filter.js"></script>
+  <!-- <script src="./js/main-counter.js"></script> -->
+  <!-- <script src="./js/main-filter.js"></script> -->
 </body>
 </html>
